@@ -54,7 +54,7 @@ jobs:
           json.dump(health, open('health.json','w'), indent=2)
           "
 
-      - name: Commit & Push
+      - name: Commit & Push (mouakkid repo)
         run: |
           git config user.name "factory-pocket-bot"
           git config user.email "bot@factorypocket.pro"
@@ -63,3 +63,23 @@ jobs:
           git diff --staged --quiet && echo "No changes" && exit 0
           git commit -m "chore: market update $TIMESTAMP [skip ci]"
           git push
+
+      # ─── CROSS-REPO PUSH vers l'ancien repo (v1.3 legacy) ───────────────
+      # Nécessite le secret OLD_REPO_PAT dans les settings du repo mouakkid
+      - name: Push to legacy repo (v1.3 support)
+        if: ${{ secrets.OLD_REPO_PAT != '' }}
+        env:
+          OLD_PAT: ${{ secrets.OLD_REPO_PAT }}
+        run: |
+          echo "📡 Pushing fresh data to legacy repo..."
+          git clone https://${OLD_PAT}@github.com/memoire-gemba-ia-supply-chain/factory-pocket-api.git /tmp/legacy-repo
+          cp market_data.json health.json /tmp/legacy-repo/
+          cd /tmp/legacy-repo
+          git config user.name "factory-pocket-bot"
+          git config user.email "bot@factorypocket.pro"
+          git add market_data.json health.json
+          git diff --staged --quiet && echo "No changes in legacy repo" && exit 0
+          TIMESTAMP=$(python3 -c "import json; d=json.load(open('market_data.json')); print(d['last_update'][:16].replace('T',' '))")
+          git commit -m "chore: market update $TIMESTAMP [via mouakkid mirror]"
+          git push
+          echo "✅ Legacy repo updated successfully"
