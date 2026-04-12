@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-04-12T20:50:18.405337+00:00",
+  "last_update": "2026-04-12T21:48:59.525522+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -55,24 +55,24 @@
     {
       "ticker": "EURUSD=X",
       "name": "EUR / USD",
-      "price": 1.1714,
-      "trend": 0.19,
+      "price": 1.1685,
+      "trend": -0.05,
       "currency": null,
       "unit": null
     },
     {
       "ticker": "USDJPY=X",
       "name": "USD / JPY",
-      "price": 159.63,
-      "trend": 0.33,
+      "price": 159.534,
+      "trend": 0.27,
       "currency": null,
       "unit": null
     },
     {
       "ticker": "GBPUSD=X",
       "name": "GBP / USD",
-      "price": 1.3393,
-      "trend": -0.27,
+      "price": 1.34,
+      "trend": -0.23,
       "currency": null,
       "unit": null
     },
@@ -261,38 +261,38 @@
   ],
   "rates": {
     "USD": 1.0,
-    "EUR": 0.8537,
-    "GBP": 0.7466,
-    "JPY": 159.631,
-    "CAD": 1.3854,
-    "AUD": 1.4288,
+    "EUR": 0.8558,
+    "GBP": 0.7463,
+    "JPY": 159.545,
+    "CAD": 1.3857,
+    "AUD": 1.4262,
     "CNY": 6.8273,
-    "CHF": 0.7904,
-    "HKD": 7.8297,
-    "SGD": 1.2761,
-    "SEK": 9.3102,
-    "KRW": 1485.41,
-    "NOK": 9.5144,
-    "NZD": 1.7253,
+    "CHF": 0.7896,
+    "HKD": 7.8317,
+    "SGD": 1.2764,
+    "SEK": 9.3133,
+    "KRW": 1483.01,
+    "NOK": 9.5363,
+    "NZD": 1.7209,
     "INR": 93.048,
-    "MXN": 17.395,
-    "TWD": 31.766,
-    "ZAR": 16.5688,
+    "MXN": 17.41,
+    "TWD": 31.776,
+    "ZAR": 16.5749,
     "BRL": 5.0126,
-    "DKK": 6.4004,
-    "PLN": 3.648,
+    "DKK": 6.3972,
+    "PLN": 3.6427,
     "THB": 31.98,
     "IDR": 17107.0,
-    "HUF": 319.97,
+    "HUF": 314.73,
     "CZK": 20.767,
-    "ILS": 3.0384,
+    "ILS": 3.0641,
     "CLP": 897.31,
     "PHP": 59.883,
-    "AED": 3.6731,
-    "COP": 3639.95,
+    "AED": 3.672,
+    "COP": 3639.9199,
     "SAR": 3.7525,
     "MYR": 3.96,
-    "RON": 4.3395,
+    "RON": 4.3569,
     "MAD": 9.2642
   },
   "exchanger_audit": {
@@ -301,7 +301,13 @@
     "validated": 33,
     "bounds_rejected": [],
     "fetch_failed": [],
-    "cross_check_deviations": {},
+    "cross_check_deviations": {
+      "HUF": {
+        "scraped": 314.73,
+        "ecb": 322.0903,
+        "deviation_pct": 2.29
+      }
+    },
     "cross_check_source": "ECB",
     "final_count": 34
   }
