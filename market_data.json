@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-04-12T16:54:14.177446+00:00",
+  "last_update": "2026-04-12T17:48:50.078013+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -153,8 +153,8 @@
     {
       "ticker": "RB=F",
       "name": "Gasoline (RBOB)",
-      "price": 3.0373,
-      "trend": 1.22,
+      "price": 2.9552,
+      "trend": -1.52,
       "currency": "USD",
       "unit": "USD/gal"
     }
@@ -163,48 +163,48 @@
     {
       "ticker": "GC=F",
       "name": "Gold",
-      "price": 4761.8999,
-      "trend": -0.63,
+      "price": 4787.3999,
+      "trend": -0.1,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "SI=F",
       "name": "Silver",
-      "price": 76.324,
-      "trend": 0.06,
+      "price": 76.48,
+      "trend": 0.27,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "HG=F",
       "name": "Copper",
-      "price": 5.8705,
-      "trend": 2.13,
+      "price": 5.886,
+      "trend": 2.4,
       "currency": "USD",
       "unit": "USD/lb"
     },
     {
       "ticker": "ALI=F",
       "name": "Aluminium",
-      "price": 3429.75,
-      "trend": 1.66,
+      "price": 3414.75,
+      "trend": 1.22,
       "currency": "USD",
       "unit": "USD/t"
     },
     {
       "ticker": "PL=F",
       "name": "Platinum",
-      "price": 2049.1001,
-      "trend": -2.27,
+      "price": 2065.2,
+      "trend": -1.5,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "PA=F",
       "name": "Palladium",
-      "price": 1528.1,
-      "trend": -1.6,
+      "price": 1540.2,
+      "trend": -0.82,
       "currency": "USD",
       "unit": "USD/oz"
     }
@@ -213,16 +213,16 @@
     {
       "ticker": "SB=F",
       "name": "Sugar #11",
-      "price": 13.75,
-      "trend": -1.22,
+      "price": 13.91,
+      "trend": -0.07,
       "currency": null,
       "unit": "¢/lb"
     },
     {
       "ticker": "KC=F",
       "name": "Coffee",
-      "price": 300.1,
-      "trend": 2.18,
+      "price": 281.6,
+      "trend": -4.12,
       "currency": null,
       "unit": "¢/lb"
     },
@@ -280,16 +280,16 @@
     "ZAR": 16.3983,
     "BRL": 5.0126,
     "DKK": 6.3709,
-    "PLN": 3.6188,
+    "PLN": 3.617,
     "THB": 31.98,
     "IDR": 17107.0,
-    "HUF": 319.9,
+    "HUF": 319.8,
     "CZK": 20.767,
     "ILS": 3.0384,
     "CLP": 897.31,
     "PHP": 59.883,
-    "AED": 3.6727,
-    "COP": 3640.24,
+    "AED": 3.6731,
+    "COP": 3640.21,
     "SAR": 3.7525,
     "MYR": 3.96,
     "RON": 4.3395,
