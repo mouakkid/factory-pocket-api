@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-04-19T16:55:44.856423+00:00",
+  "last_update": "2026-04-19T17:50:14.863327+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -129,8 +129,8 @@
     {
       "ticker": "CL=F",
       "name": "WTI Crude",
-      "price": 83.85,
-      "trend": -11.45,
+      "price": 82.59,
+      "trend": -12.78,
       "currency": "USD",
       "unit": "USD/bbl"
     },
@@ -171,8 +171,8 @@
     {
       "ticker": "SI=F",
       "name": "Silver",
-      "price": 81.738,
-      "trend": 3.98,
+      "price": 81.842,
+      "trend": 4.12,
       "currency": "USD",
       "unit": "USD/oz"
     },
@@ -213,16 +213,16 @@
     {
       "ticker": "SB=F",
       "name": "Sugar #11",
-      "price": 13.31,
-      "trend": -2.56,
+      "price": 13.5,
+      "trend": -1.17,
       "currency": null,
       "unit": "¢/lb"
     },
     {
       "ticker": "KC=F",
       "name": "Coffee",
-      "price": 289.3,
-      "trend": -2.41,
+      "price": 272.3,
+      "trend": -8.15,
       "currency": null,
       "unit": "¢/lb"
     },
@@ -283,13 +283,13 @@
     "PLN": 3.5878,
     "THB": 31.89,
     "IDR": 17184.0,
-    "HUF": 307.04,
+    "HUF": 306.94,
     "CZK": 20.623,
     "ILS": 2.9668,
     "CLP": 878.6,
     "PHP": 59.548,
     "AED": 3.673,
-    "COP": 3601.97,
+    "COP": 3602.8,
     "SAR": 3.751,
     "MYR": 3.95,
     "RON": 4.3314,
