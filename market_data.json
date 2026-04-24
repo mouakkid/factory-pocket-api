@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-04-24T21:58:52.402674+00:00",
+  "last_update": "2026-04-24T22:54:24.933233+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -29,7 +29,7 @@
     {
       "ticker": "^STOXX50E",
       "name": "Euro Stoxx 50",
-      "price": 5883.48,
+      "price": 5894.73,
       "trend": -0.19,
       "currency": null,
       "unit": "pts"
