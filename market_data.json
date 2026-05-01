@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-01T22:03:25.815055+00:00",
+  "last_update": "2026-05-01T23:05:14.818025+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -37,8 +37,8 @@
     {
       "ticker": "^FTSE",
       "name": "FTSE 100",
-      "price": 10363.9297,
-      "trend": -0.14,
+      "price": 10378.7998,
+      "trend": 1.62,
       "currency": null,
       "unit": "pts"
     },
