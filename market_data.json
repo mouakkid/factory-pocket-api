@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-01T21:04:59.624652+00:00",
+  "last_update": "2026-05-01T22:03:25.815055+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -87,8 +87,8 @@
     {
       "ticker": "DX-Y.NYB",
       "name": "US Dollar Index",
-      "price": 98.227,
-      "trend": 0.15,
+      "price": 98.211,
+      "trend": 0.13,
       "currency": null,
       "unit": "pts"
     },
@@ -121,40 +121,40 @@
     {
       "ticker": "BZ=F",
       "name": "Brent Crude",
-      "price": 108.78,
-      "trend": -4.59,
+      "price": 108.83,
+      "trend": -4.54,
       "currency": "USD",
       "unit": "USD/bbl"
     },
     {
       "ticker": "CL=F",
       "name": "WTI Crude",
-      "price": 102.25,
-      "trend": -2.68,
+      "price": 102.5,
+      "trend": -2.45,
       "currency": "USD",
       "unit": "USD/bbl"
     },
     {
       "ticker": "NG=F",
       "name": "Natural Gas",
-      "price": 2.782,
-      "trend": 0.54,
+      "price": 2.789,
+      "trend": 0.8,
       "currency": "USD",
       "unit": "USD/MMBtu"
     },
     {
       "ticker": "HO=F",
       "name": "Heating Oil",
-      "price": 3.9664,
-      "trend": -4.16,
+      "price": 3.975,
+      "trend": -3.95,
       "currency": "USD",
       "unit": "USD/gal"
     },
     {
       "ticker": "RB=F",
       "name": "Gasoline (RBOB)",
-      "price": 3.6013,
-      "trend": -4.51,
+      "price": 3.6103,
+      "trend": -4.27,
       "currency": "USD",
       "unit": "USD/gal"
     }
@@ -163,24 +163,24 @@
     {
       "ticker": "GC=F",
       "name": "Gold",
-      "price": 4628.1001,
-      "trend": 0.29,
+      "price": 4625.6001,
+      "trend": 0.24,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "SI=F",
       "name": "Silver",
-      "price": 75.965,
-      "trend": 3.31,
+      "price": 75.84,
+      "trend": 3.14,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "HG=F",
       "name": "Copper",
-      "price": 5.966,
-      "trend": 0.67,
+      "price": 5.9645,
+      "trend": 0.65,
       "currency": "USD",
       "unit": "USD/lb"
     },
@@ -195,16 +195,16 @@
     {
       "ticker": "PL=F",
       "name": "Platinum",
-      "price": 2001.6,
-      "trend": 1.14,
+      "price": 2000.7,
+      "trend": 1.1,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "PA=F",
       "name": "Palladium",
-      "price": 1539.0,
-      "trend": 0.83,
+      "price": 1538.5,
+      "trend": 0.79,
       "currency": "USD",
       "unit": "USD/oz"
     }
