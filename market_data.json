@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-07T14:16:52.478204+00:00",
+  "last_update": "2026-06-07T16:40:55.268650+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -264,7 +264,7 @@
     "EUR": 0.8675,
     "GBP": 0.7498,
     "JPY": 160.293,
-    "CAD": 1.3937,
+    "CAD": 1.3933,
     "AUD": 1.4185,
     "CNY": 6.765,
     "CHF": 0.7962,
@@ -277,8 +277,8 @@
     "INR": 94.935,
     "MXN": 17.463,
     "TWD": 31.585,
-    "ZAR": 16.5539,
-    "BRL": 5.1711,
+    "ZAR": 16.5541,
+    "BRL": 5.1512,
     "DKK": 6.4855,
     "PLN": 3.6792,
     "THB": 32.79,
@@ -289,7 +289,7 @@
     "CLP": 912.7,
     "PHP": 61.72,
     "AED": 3.6726,
-    "COP": 3594.4099,
+    "COP": 3589.6499,
     "SAR": 3.7546,
     "MYR": 4.025,
     "RON": 4.5502,
@@ -301,13 +301,7 @@
     "validated": 33,
     "bounds_rejected": [],
     "fetch_failed": [],
-    "cross_check_deviations": {
-      "BRL": {
-        "scraped": 5.1711,
-        "ecb": 5.0599,
-        "deviation_pct": 2.2
-      }
-    },
+    "cross_check_deviations": {},
     "cross_check_source": "ECB",
     "final_count": 34
   }
