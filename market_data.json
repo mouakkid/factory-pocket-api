@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-27T14:52:21.745099+00:00",
+  "last_update": "2026-06-27T16:16:50.978833+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -29,8 +29,8 @@
     {
       "ticker": "^STOXX50E",
       "name": "Euro Stoxx 50",
-      "price": 6221.5498,
-      "trend": -0.73,
+      "price": 6267.5298,
+      "trend": 0.85,
       "currency": null,
       "unit": "pts"
     },
@@ -270,7 +270,7 @@
     "CHF": 0.8095,
     "HKD": 7.8411,
     "SGD": 1.2931,
-    "SEK": 9.7255,
+    "SEK": 9.7347,
     "KRW": 1535.0,
     "NOK": 9.9208,
     "NZD": 1.7727,
