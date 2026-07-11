@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-10T23:10:21.128121+00:00",
+  "last_update": "2026-07-11T03:35:04.108452+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -29,24 +29,24 @@
     {
       "ticker": "^STOXX50E",
       "name": "Euro Stoxx 50",
-      "price": 6284.27,
-      "trend": 1.28,
+      "price": 6269.9702,
+      "trend": -0.23,
       "currency": null,
       "unit": "pts"
     },
     {
       "ticker": "^FTSE",
       "name": "FTSE 100",
-      "price": 10472.5,
-      "trend": -0.16,
+      "price": 10497.2998,
+      "trend": 0.24,
       "currency": null,
       "unit": "pts"
     },
     {
       "ticker": "^N225",
       "name": "Nikkei 225",
-      "price": 67743.8516,
-      "trend": 1.38,
+      "price": 68557.7266,
+      "trend": 1.2,
       "currency": null,
       "unit": "pts"
     }
@@ -79,8 +79,8 @@
     {
       "ticker": "USDCNY=X",
       "name": "USD / CNY",
-      "price": 6.7667,
-      "trend": -0.53,
+      "price": 6.7731,
+      "trend": -0.28,
       "currency": null,
       "unit": null
     },
@@ -266,12 +266,12 @@
     "JPY": 161.672,
     "CAD": 1.4152,
     "AUD": 1.4378,
-    "CNY": 6.7667,
+    "CNY": 6.7731,
     "CHF": 0.8078,
     "HKD": 7.8393,
     "SGD": 1.2914,
     "SEK": 9.6498,
-    "KRW": 1498.87,
+    "KRW": 1498.7,
     "NOK": 9.7703,
     "NZD": 1.7352,
     "INR": 95.37,
@@ -282,16 +282,16 @@
     "DKK": 6.5488,
     "PLN": 3.7851,
     "THB": 33.24,
-    "IDR": 18064.0,
+    "IDR": 18050.0,
     "HUF": 311.57,
     "CZK": 21.224,
     "ILS": 3.0026,
     "CLP": 923.9,
-    "PHP": 61.475,
+    "PHP": 61.51,
     "AED": 3.6728,
-    "COP": 3247.47,
+    "COP": 3239.6799,
     "SAR": 3.7543,
-    "MYR": 4.067,
+    "MYR": 4.069,
     "RON": 4.5896,
     "MAD": 9.3213
   },
