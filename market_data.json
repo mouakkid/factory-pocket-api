@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-24T22:14:37.793406+00:00",
+  "last_update": "2026-07-25T00:12:34.727331+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -37,8 +37,8 @@
     {
       "ticker": "^FTSE",
       "name": "FTSE 100",
-      "price": 10736.2305,
-      "trend": 0.91,
+      "price": 10639.2002,
+      "trend": -0.73,
       "currency": null,
       "unit": "pts"
     },
@@ -95,24 +95,24 @@
     {
       "ticker": "USDMAD=X",
       "name": "USD / MAD",
-      "price": 9.3545,
-      "trend": -0.3,
+      "price": 9.355,
+      "trend": 2.86,
       "currency": null,
       "unit": null
     },
     {
       "ticker": "EURMAD=X",
       "name": "EUR / MAD",
-      "price": 10.624,
-      "trend": 2.49,
+      "price": 10.631,
+      "trend": 2.72,
       "currency": null,
       "unit": null
     },
     {
       "ticker": "GBPMAD=X",
       "name": "GBP / MAD",
-      "price": 12.454,
-      "trend": 2.5,
+      "price": 12.46,
+      "trend": 2.89,
       "currency": null,
       "unit": null
     }
@@ -269,31 +269,31 @@
     "CNY": 6.7714,
     "CHF": 0.8177,
     "HKD": 7.8414,
-    "SGD": 1.2901,
-    "SEK": 9.7117,
+    "SGD": 1.29,
+    "SEK": 9.712,
     "KRW": 1459.42,
     "NOK": 9.5748,
-    "NZD": 1.7274,
+    "NZD": 1.7268,
     "INR": 96.552,
     "MXN": 17.475,
-    "TWD": 32.321,
-    "ZAR": 16.8246,
+    "TWD": 32.34,
+    "ZAR": 16.82,
     "BRL": 5.0751,
     "DKK": 6.5744,
-    "PLN": 3.7923,
-    "THB": 33.66,
+    "PLN": 3.7925,
+    "THB": 33.69,
     "IDR": 17968.0,
     "HUF": 317.25,
     "CZK": 21.202,
     "ILS": 3.0493,
     "CLP": 948.45,
-    "PHP": 61.69,
+    "PHP": 61.66,
     "AED": 3.6729,
-    "COP": 3216.78,
+    "COP": 3217.6599,
     "SAR": 3.7538,
     "MYR": 4.088,
     "RON": 4.5851,
-    "MAD": 9.3545
+    "MAD": 9.355
   },
   "exchanger_audit": {
     "total_requested": 33,
