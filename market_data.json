@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-26T07:43:50.314828+00:00",
+  "last_update": "2026-07-26T10:08:47.936632+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -145,16 +145,16 @@
     {
       "ticker": "HO=F",
       "name": "Heating Oil",
-      "price": 4.1806,
-      "trend": -3.71,
+      "price": 4.0954,
+      "trend": -5.67,
       "currency": "USD",
       "unit": "USD/gal"
     },
     {
       "ticker": "RB=F",
       "name": "Gasoline (RBOB)",
-      "price": 3.3959,
-      "trend": -2.87,
+      "price": 3.2516,
+      "trend": -7.0,
       "currency": "USD",
       "unit": "USD/gal"
     }
@@ -163,32 +163,32 @@
     {
       "ticker": "GC=F",
       "name": "Gold",
-      "price": 4067.6001,
-      "trend": 0.52,
+      "price": 4070.8,
+      "trend": 0.6,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "SI=F",
       "name": "Silver",
-      "price": 58.656,
-      "trend": 1.48,
+      "price": 58.906,
+      "trend": 1.92,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "HG=F",
       "name": "Copper",
-      "price": 6.32,
-      "trend": 0.24,
+      "price": 6.3575,
+      "trend": 0.83,
       "currency": "USD",
       "unit": "USD/lb"
     },
     {
       "ticker": "ALI=F",
       "name": "Aluminium",
-      "price": 3528.0,
-      "trend": -1.02,
+      "price": 3448.75,
+      "trend": -3.25,
       "currency": "USD",
       "unit": "USD/t"
     },
