@@ -1,52 +1,52 @@
 {
-  "last_update": "2026-07-26T04:35:35.118245+00:00",
+  "last_update": "2026-07-26T07:43:50.314828+00:00",
   "totalItems": 31,
   "indices": [
     {
       "ticker": "^GSPC",
       "name": "S&P 500",
-      "price": 7411.98,
-      "trend": 0.05,
+      "price": 7408.2998,
+      "trend": -1.21,
       "currency": null,
       "unit": "pts"
     },
     {
       "ticker": "^DJI",
       "name": "Dow Jones",
-      "price": 51947.25,
-      "trend": 0.46,
+      "price": 51711.6484,
+      "trend": -0.97,
       "currency": null,
       "unit": "pts"
     },
     {
       "ticker": "^IXIC",
       "name": "Nasdaq",
-      "price": 24975.8203,
-      "trend": -0.64,
+      "price": 25137.6895,
+      "trend": -2.15,
       "currency": null,
       "unit": "pts"
     },
     {
       "ticker": "^STOXX50E",
       "name": "Euro Stoxx 50",
-      "price": 6280.9399,
-      "trend": 1.14,
+      "price": 6210.1699,
+      "trend": -1.69,
       "currency": null,
       "unit": "pts"
     },
     {
       "ticker": "^FTSE",
       "name": "FTSE 100",
-      "price": 10736.2002,
-      "trend": 0.91,
+      "price": 10639.2002,
+      "trend": -0.73,
       "currency": null,
       "unit": "pts"
     },
     {
       "ticker": "^N225",
       "name": "Nikkei 225",
-      "price": 64611.1484,
-      "trend": -2.73,
+      "price": 66422.6016,
+      "trend": 0.46,
       "currency": null,
       "unit": "pts"
     }
@@ -87,8 +87,8 @@
     {
       "ticker": "DX-Y.NYB",
       "name": "US Dollar Index",
-      "price": 101.47,
-      "trend": 0.04,
+      "price": 101.43,
+      "trend": 0.29,
       "currency": null,
       "unit": "pts"
     },
@@ -145,16 +145,16 @@
     {
       "ticker": "HO=F",
       "name": "Heating Oil",
-      "price": 4.0954,
-      "trend": -5.67,
+      "price": 4.1806,
+      "trend": -3.71,
       "currency": "USD",
       "unit": "USD/gal"
     },
     {
       "ticker": "RB=F",
       "name": "Gasoline (RBOB)",
-      "price": 3.2516,
-      "trend": -7.0,
+      "price": 3.3959,
+      "trend": -2.87,
       "currency": "USD",
       "unit": "USD/gal"
     }
@@ -163,32 +163,32 @@
     {
       "ticker": "GC=F",
       "name": "Gold",
-      "price": 4070.8,
-      "trend": 0.6,
+      "price": 4067.6001,
+      "trend": 0.52,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "SI=F",
       "name": "Silver",
-      "price": 58.906,
-      "trend": 1.92,
+      "price": 58.656,
+      "trend": 1.48,
       "currency": "USD",
       "unit": "USD/oz"
     },
     {
       "ticker": "HG=F",
       "name": "Copper",
-      "price": 6.3575,
-      "trend": 0.83,
+      "price": 6.32,
+      "trend": 0.24,
       "currency": "USD",
       "unit": "USD/lb"
     },
     {
       "ticker": "ALI=F",
       "name": "Aluminium",
-      "price": 3448.75,
-      "trend": -3.25,
+      "price": 3528.0,
+      "trend": -1.02,
       "currency": "USD",
       "unit": "USD/t"
     },
