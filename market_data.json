@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-31T22:12:51.236026+00:00",
+  "last_update": "2026-08-01T00:09:15.684865+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -37,8 +37,8 @@
     {
       "ticker": "^FTSE",
       "name": "FTSE 100",
-      "price": 10868.0498,
-      "trend": -0.27,
+      "price": 10897.2998,
+      "trend": -0.1,
       "currency": null,
       "unit": "pts"
     },
@@ -96,7 +96,7 @@
       "ticker": "USDMAD=X",
       "name": "USD / MAD",
       "price": 9.3239,
-      "trend": -0.63,
+      "trend": -0.61,
       "currency": null,
       "unit": null
     },
