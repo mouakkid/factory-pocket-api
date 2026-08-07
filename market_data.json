@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-07T21:51:29.798933+00:00",
+  "last_update": "2026-08-07T22:50:23.480264+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -29,8 +29,8 @@
     {
       "ticker": "^STOXX50E",
       "name": "Euro Stoxx 50",
-      "price": 6523.8599,
-      "trend": 0.33,
+      "price": 6502.5601,
+      "trend": 0.39,
       "currency": null,
       "unit": "pts"
     },
@@ -278,7 +278,7 @@
     "MXN": 17.116,
     "TWD": 32.235,
     "ZAR": 16.1284,
-    "BRL": 5.0823,
+    "BRL": 5.0842,
     "DKK": 6.4683,
     "PLN": 3.7143,
     "THB": 33.02,
