@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-09T08:56:25.761556+00:00",
+  "last_update": "2026-08-09T09:51:59.461789+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -171,8 +171,8 @@
     {
       "ticker": "SI=F",
       "name": "Silver",
-      "price": 63.499,
-      "trend": 3.35,
+      "price": 63.332,
+      "trend": 3.08,
       "currency": "USD",
       "unit": "USD/oz"
     },
