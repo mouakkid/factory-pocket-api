@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-14T21:34:58.126744+00:00",
+  "last_update": "2026-08-14T22:34:24.589511+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -29,8 +29,8 @@
     {
       "ticker": "^STOXX50E",
       "name": "Euro Stoxx 50",
-      "price": 6539.5898,
-      "trend": -0.09,
+      "price": 6545.4702,
+      "trend": 0.18,
       "currency": null,
       "unit": "pts"
     },
@@ -64,7 +64,7 @@
       "ticker": "USDJPY=X",
       "name": "USD / JPY",
       "price": 159.305,
-      "trend": -0.08,
+      "trend": -0.01,
       "currency": null,
       "unit": null
     },
@@ -278,7 +278,7 @@
     "MXN": 17.0025,
     "TWD": 32.004,
     "ZAR": 16.1664,
-    "BRL": 5.2132,
+    "BRL": 5.2265,
     "DKK": 6.4587,
     "PLN": 3.7222,
     "THB": 33.09,
