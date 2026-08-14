@@ -1,0 +1,892 @@
+<title>Turquie ou ailleurs</title>
+<style>
+:root{
+  --paper:#F5F6F8;
+  --paper-2:#FFFFFF;
+  --paper-3:#EAEDF1;
+  --rule:#D3D8DF;
+  --rule-soft:#E4E8ED;
+  --ink:#12161F;
+  --ink-2:#39404C;
+  --ink-3:#6B7382;
+  --accent:#8C2F39;
+  --accent-soft:#F3E4E5;
+  --teal:#1D6A6A;
+  --teal-soft:#DEEBEA;
+  --gain:#1B6B44;
+  --gain-soft:#DFEDE5;
+  --loss:#A33227;
+  --loss-soft:#F6E3DF;
+  --flat:#6B7382;
+  --flat-soft:#E6E9ED;
+  --shadow:0 1px 2px rgba(18,22,31,.05), 0 8px 24px -16px rgba(18,22,31,.25);
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1219;
+    --paper-2:#161B25;
+    --paper-3:#1D2431;
+    --rule:#2B3341;
+    --rule-soft:#222A36;
+    --ink:#E9ECF1;
+    --ink-2:#B7BEC9;
+    --ink-3:#848D9B;
+    --accent:#D98A92;
+    --accent-soft:#332023;
+    --teal:#6BB3B0;
+    --teal-soft:#16302F;
+    --gain:#68C295;
+    --gain-soft:#132A20;
+    --loss:#E0897B;
+    --loss-soft:#2E1C18;
+    --flat:#848D9B;
+    --flat-soft:#20262F;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1219;
+  --paper-2:#161B25;
+  --paper-3:#1D2431;
+  --rule:#2B3341;
+  --rule-soft:#222A36;
+  --ink:#E9ECF1;
+  --ink-2:#B7BEC9;
+  --ink-3:#848D9B;
+  --accent:#D98A92;
+  --accent-soft:#332023;
+  --teal:#6BB3B0;
+  --teal-soft:#16302F;
+  --gain:#68C295;
+  --gain-soft:#132A20;
+  --loss:#E0897B;
+  --loss-soft:#2E1C18;
+  --flat:#848D9B;
+  --flat-soft:#20262F;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 24px 96px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+}
+.col{max-width:68ch;margin:0 auto;width:100%}
+
+/* ---------- masthead ---------- */
+.mast{
+  padding:64px 0 40px;
+  border-bottom:3px solid var(--ink);
+  margin-bottom:0;
+}
+.eyebrow{
+  font-family:var(--sans);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 20px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 16px;
+  align-items:center;
+}
+.eyebrow span.sep{color:var(--rule)}
+.eyebrow span.dim{color:var(--ink-3)}
+h1{
+  font-family:var(--sans);
+  font-size:clamp(2.5rem,6.5vw,4.6rem);
+  font-weight:800;
+  letter-spacing:-.035em;
+  line-height:.98;
+  margin:0 0 22px;
+  text-wrap:balance;
+  max-width:16ch;
+}
+.standfirst{
+  font-size:clamp(1.05rem,2vw,1.28rem);
+  line-height:1.5;
+  color:var(--ink-2);
+  margin:0;
+  max-width:60ch;
+}
+.standfirst strong{color:var(--ink);font-weight:400;box-shadow:inset 0 -.42em 0 var(--accent-soft)}
+
+/* ---------- verdict tiles ---------- */
+.tiles{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:1px;
+  background:var(--rule);
+  border-bottom:1px solid var(--rule);
+  margin:0 0 8px;
+}
+.tile{
+  background:var(--paper);
+  padding:26px 22px 24px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.tile .num{
+  font-family:var(--sans);
+  font-size:clamp(1.9rem,4vw,2.6rem);
+  font-weight:800;
+  letter-spacing:-.04em;
+  line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.tile .num.g{color:var(--gain)}
+.tile .num.l{color:var(--loss)}
+.tile .num.f{color:var(--flat)}
+.tile .lbl{
+  font-family:var(--sans);
+  font-size:12.5px;
+  line-height:1.45;
+  color:var(--ink-2);
+}
+.tile .lbl b{color:var(--ink);font-weight:650}
+
+/* ---------- sections ---------- */
+section{padding:56px 0 0}
+h2{
+  font-family:var(--sans);
+  font-size:clamp(1.5rem,3.2vw,2.05rem);
+  font-weight:800;
+  letter-spacing:-.028em;
+  line-height:1.1;
+  margin:0 0 6px;
+  text-wrap:balance;
+}
+.h2num{
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:600;
+  color:var(--accent);
+  letter-spacing:.08em;
+  display:block;
+  margin-bottom:10px;
+}
+.dek{
+  font-family:var(--sans);
+  font-size:15px;
+  color:var(--ink-3);
+  margin:0 0 30px;
+  line-height:1.5;
+  max-width:58ch;
+}
+h3{
+  font-family:var(--sans);
+  font-size:1.06rem;
+  font-weight:750;
+  letter-spacing:-.012em;
+  margin:38px 0 12px;
+  color:var(--ink);
+}
+h4{
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin:32px 0 12px;
+}
+p{margin:0 0 18px}
+a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+ul,ol{margin:0 0 18px;padding-left:1.15em}
+li{margin-bottom:9px}
+strong{font-weight:700}
+code,.mono{font-family:var(--mono);font-size:.88em;font-variant-numeric:tabular-nums}
+
+/* ---------- tables ---------- */
+.tablewrap{
+  overflow-x:auto;
+  margin:0 0 14px;
+  border-top:2px solid var(--ink);
+  border-bottom:1px solid var(--rule);
+  -webkit-overflow-scrolling:touch;
+}
+table{
+  border-collapse:collapse;
+  width:100%;
+  min-width:640px;
+  font-family:var(--sans);
+  font-size:13.5px;
+  line-height:1.4;
+}
+thead th{
+  text-align:left;
+  font-weight:700;
+  font-size:11px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  padding:12px 14px 11px;
+  border-bottom:1px solid var(--rule);
+  white-space:nowrap;
+  vertical-align:bottom;
+  background:var(--paper);
+}
+tbody td{
+  padding:11px 14px;
+  border-bottom:1px solid var(--rule-soft);
+  vertical-align:top;
+}
+tbody tr:last-child td{border-bottom:none}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-family:var(--mono);font-size:12.5px}
+td.svc{font-weight:650;color:var(--ink);white-space:nowrap}
+td.g{color:var(--gain);font-weight:650}
+td.l{color:var(--loss);font-weight:650}
+td.f{color:var(--flat)}
+tbody tr.band td{
+  background:var(--paper-3);
+  font-family:var(--sans);
+  font-size:10.5px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  padding:8px 14px;
+}
+.caption{
+  font-family:var(--sans);
+  font-size:12px;
+  color:var(--ink-3);
+  line-height:1.5;
+  margin:0 0 34px;
+}
+
+/* verdict chips */
+.chip{
+  display:inline-block;
+  font-family:var(--sans);
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  padding:3px 8px;
+  border-radius:2px;
+  white-space:nowrap;
+}
+.chip.gain{background:var(--gain-soft);color:var(--gain)}
+.chip.nul{background:var(--flat-soft);color:var(--flat)}
+.chip.piege{background:var(--loss-soft);color:var(--loss)}
+.chip.tr{background:var(--teal-soft);color:var(--teal)}
+
+/* ---------- callouts ---------- */
+.note{
+  border-left:3px solid var(--accent);
+  background:var(--accent-soft);
+  padding:18px 22px;
+  margin:0 0 26px;
+  font-family:var(--sans);
+  font-size:14.5px;
+  line-height:1.55;
+}
+.note p{margin:0 0 10px}
+.note p:last-child{margin:0}
+.note .tag{
+  display:block;
+  font-size:10.5px;
+  font-weight:750;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:8px;
+}
+.note.cool{border-left-color:var(--teal);background:var(--teal-soft)}
+.note.cool .tag{color:var(--teal)}
+.note.warn{border-left-color:var(--loss);background:var(--loss-soft)}
+.note.warn .tag{color:var(--loss)}
+
+/* ---------- country cards ---------- */
+.countries{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(268px,1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+  margin:0 0 14px;
+}
+.cc{
+  background:var(--paper);
+  padding:18px 18px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+.cc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.cc-name{
+  font-family:var(--sans);
+  font-size:14.5px;
+  font-weight:750;
+  letter-spacing:-.01em;
+}
+.cc-rank{
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+.cc-disc{
+  font-family:var(--sans);
+  font-size:19px;
+  font-weight:800;
+  letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;
+  color:var(--gain);
+}
+.cc-disc.weak{color:var(--flat)}
+.cc-disc.neg{color:var(--loss)}
+.cc-body{font-family:var(--sans);font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.cc-body b{color:var(--ink);font-weight:650}
+.cc-meta{
+  font-family:var(--sans);
+  font-size:11px;
+  color:var(--ink-3);
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  border-top:1px solid var(--rule-soft);
+  padding-top:8px;
+  margin-top:auto;
+}
+.grade{font-family:var(--mono);font-weight:700}
+.grade.a,.grade.b{color:var(--gain)}
+.grade.c{color:var(--ink-2)}
+.grade.d,.grade.e{color:var(--loss)}
+
+/* ---------- basket ---------- */
+.basket{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+  margin:0 0 14px;
+}
+.bk{background:var(--paper);padding:24px 20px;display:flex;flex-direction:column;gap:6px}
+.bk .who{
+  font-family:var(--sans);
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+}
+.bk .amt{
+  font-family:var(--sans);
+  font-size:clamp(1.6rem,3.6vw,2.15rem);
+  font-weight:800;
+  letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;
+  line-height:1;
+}
+.bk .sub{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+.bk.hero .amt{color:var(--loss)}
+.bk.mid .amt{color:var(--teal)}
+.bk.best .amt{color:var(--gain)}
+
+/* bar chart */
+.bars{margin:0 0 14px;display:flex;flex-direction:column;gap:2px}
+.bar{
+  display:grid;
+  grid-template-columns:minmax(120px,180px) minmax(0,1fr) 78px;
+  align-items:center;
+  gap:12px;
+  font-family:var(--sans);
+  font-size:13px;
+  padding:5px 0;
+}
+.bar .bl{font-weight:650;color:var(--ink)}
+.bar .bt{height:15px;background:var(--rule-soft);position:relative;overflow:hidden}
+.bar .bf{height:100%;background:var(--accent);display:block}
+.bar .bv{
+  text-align:right;
+  font-family:var(--mono);
+  font-size:12px;
+  font-variant-numeric:tabular-nums;
+  color:var(--ink-2);
+}
+
+/* ---------- steps ---------- */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 20px}
+.steps li{
+  counter-increment:s;
+  position:relative;
+  padding:0 0 20px 46px;
+  margin:0;
+  border-left:1px solid var(--rule);
+  margin-left:13px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{
+  content:counter(s);
+  position:absolute;
+  left:-13px;
+  top:0;
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--paper-2);
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+:root:not([data-theme="light"]) .steps li::before{color:#12161F}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .steps li::before{color:#FFF}}
+:root[data-theme="light"] .steps li::before{color:#FFF}
+.steps .st{
+  font-family:var(--sans);
+  font-size:15px;
+  font-weight:750;
+  display:block;
+  margin-bottom:5px;
+  line-height:1.3;
+  padding-top:2px;
+}
+.steps .sd{font-family:var(--sans);font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.steps .sd b{color:var(--ink)}
+
+hr.div{border:none;border-top:1px solid var(--rule);margin:52px 0 0}
+
+footer{
+  margin-top:64px;
+  padding-top:26px;
+  border-top:3px solid var(--ink);
+  font-family:var(--sans);
+  font-size:12.5px;
+  color:var(--ink-3);
+  line-height:1.6;
+}
+footer p{margin:0 0 12px}
+footer strong{color:var(--ink-2)}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px 72px}
+  .mast{padding:44px 0 32px}
+  .bar{grid-template-columns:minmax(96px,130px) minmax(0,1fr) 64px;gap:8px;font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast col">
+  <p class="eyebrow">
+    <span>Dossier tarifaire</span><span class="sep">/</span>
+    <span>Maroc · Turquie · Monde</span><span class="sep">/</span>
+    <span class="dim">14 août 2026</span>
+  </p>
+  <h1>Turquie ou ailleurs</h1>
+  <p class="standfirst">Recherche sur les logiciels, services et abonnements moins chers en Turquie qu'ailleurs — et, à défaut, sur le pays le moins cher au monde pour chacun. Le point de comparaison est le Maroc. <strong>La réponse courte : la Turquie a perdu la moitié de son avantage, mais reste imbattable là où on ne l'attend pas.</strong></p>
+</header>
+
+<div class="tiles">
+  <div class="tile">
+    <span class="num g">−94 %</span>
+    <span class="lbl"><b>LinkedIn Premium</b> en Turquie contre le tarif payé au Maroc. Le plus gros écart de tout le dossier, toutes catégories confondues.</span>
+  </div>
+  <div class="tile">
+    <span class="num f">0 %</span>
+    <span class="lbl"><b>Steam.</b> Le Maroc et la Turquie sont dans la <b>même zone tarifaire</b> (MENA-USD). Changer de pays n'y rapporte rigoureusement rien.</span>
+  </div>
+  <div class="tile">
+    <span class="num l">+59 %</span>
+    <span class="lbl"><b>Google AI Pro</b> coûte aujourd'hui plus cher en Turquie qu'aux États-Unis, après la hausse de +75 % du 11 août 2026.</span>
+  </div>
+  <div class="tile">
+    <span class="num g">9 800 <span style="font-size:.5em;letter-spacing:0">MAD</span></span>
+    <span class="lbl">Économie annuelle <b>théorique maximale</b> sur un panier de 7 abonnements. Économie <b>réaliste et sans risque</b> : environ 3 400 MAD.</span>
+  </div>
+</div>
+
+<div class="col">
+
+<section>
+  <span class="h2num">01</span>
+  <h2>Le verdict, en six points</h2>
+  <p class="dek">Ce que six agents de recherche parallèles ont établi, après vérification des prix sur les sites officiels, les API publiques des plateformes et la presse nationale turque et marocaine.</p>
+
+  <p><strong>1. La Turquie n'est plus l'eldorado de 2021.</strong> Entre novembre 2023 et août 2026, une vague d'éditeurs a supprimé la tarification en livres turques — Steam, EA, Blizzard — ou l'a rattrapée par des hausses de 70 à 900 % : Microsoft 365 ×20, Google One +75 %, YouTube Premium +50 %, Spotify +66 %. En dollars constants, Netflix Turquie a <em>augmenté</em> de 31 % depuis 2021.</p>
+
+  <p><strong>2. Mais elle reste imbattable sur le logiciel professionnel.</strong> Le clivage est net et il a une logique économique : là où la Turquie est un marché de volume grand public (Netflix, YouTube), les plateformes indexent leurs prix sur la dévaluation. Là où elle est un marché de conquête professionnelle — LinkedIn, Adobe, Canva, Xbox Game Pass, Duolingo, Google Play — les éditeurs maintiennent délibérément des remises de 80 à 94 %.</p>
+
+  <p><strong>3. Le Maroc devient structurellement plus cher.</strong> Deux faits datés : la TVA de 20 % sur les services numériques étrangers est opérationnelle depuis le <strong>11 juin 2026</strong> (OpenAI la collecte depuis le 1er août), et <strong>Netflix augmente ses tarifs marocains de 22 à 23 % le 2 septembre 2026</strong>. Après cette hausse, le Maroc devient plus cher que la Turquie sur toutes les formules Netflix.</p>
+
+  <p><strong>4. La fiscalité annule une grande partie de l'arbitrage.</strong> Le Maroc applique 20 % de TVA, la Turquie 20 % de KDV — plus 5 % de taxe sur les services numériques. Sur les ~22 produits facturés en dollar mondial (Claude, Perplexity, Midjourney, Cursor, Figma, Notion, Cloudflare, JetBrains…), le prix TTC est <em>identique</em> dans les deux pays. Changer de pays y rapporte zéro.</p>
+
+  <p><strong>5. Le verrou de 2026 n'est plus le VPN, c'est la carte bancaire.</strong> Depuis la répression Google du 26 septembre 2025 et les contrôles BIN de Netflix et Spotify, un VPN seul ne suffit plus nulle part. Il faut un moyen de paiement émis dans le pays visé — ce qui rend la plupart des destinations pratiquement inaccessibles depuis le Maroc.</p>
+
+  <p><strong>6. L'Argentine s'est effondrée.</strong> Longtemps citée comme le paradis tarifaire absolu, elle est aujourd'hui <em>plus chère que le Maroc</em> : Netflix Standard y coûte 17,31 $ taxes comprises contre 8,60 $ au Maroc. Tous les classements qui la placent encore en tête sont périmés.</p>
+
+  <div class="note">
+    <span class="tag">La conclusion contre-intuitive</span>
+    <p>77 à 80 % de l'économie potentielle vient de <strong>trois services professionnels</strong> — LinkedIn Premium, Xbox Game Pass et ChatGPT. Le streaming musical et vidéo, sur lequel se concentre 90 % de la littérature en ligne « quel pays est le moins cher », ne pèse que <strong>10 % du gain</strong>, pour l'essentiel du risque et de la complexité.</p>
+    <p>Si vous ne deviez optimiser qu'un seul abonnement, ce serait LinkedIn Premium : à lui seul, il pèse plus que Netflix, Spotify, YouTube et Microsoft 365 réunis.</p>
+  </div>
+</section>
+
+<hr class="div">
+
+<section>
+  <span class="h2num">02</span>
+  <h2>Le renversement fiscal de 2026</h2>
+  <p class="dek">C'est le fait le plus important du dossier, et il inverse l'intuition de départ : sur le plan fiscal, le Maroc et la Turquie sont désormais à égalité.</p>
+</section>
+</div>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>Juridiction</th><th>Taxe sur les services numériques importés</th><th class="n">Taux</th><th>En vigueur</th><th>Effet réel</th></tr></thead>
+<tbody>
+<tr><td class="svc">🇲🇦 Maroc</td><td>TVA sur prestataires étrangers non établis (Loi de finances 2024)</td><td class="n">20 %</td><td>11 juin 2026</td><td>Aucun seuil. Traçabilité 10 ans. OpenAI collecte depuis le 1<sup>er</sup> août 2026</td></tr>
+<tr><td class="svc">🇹🇷 Turquie</td><td>KDV (TVA) sur services électroniques</td><td class="n">20 %</td><td>depuis juil. 2023</td><td>Aucun seuil. Prix B2C turcs affichés TTC</td></tr>
+<tr><td class="svc">🇹🇷 Turquie</td><td>DHV — taxe sur les services numériques</td><td class="n">+5 %</td><td>1<sup>er</sup> janv. 2026</td><td>Frappe le fournisseur, répercutée. Passe à 2,5 % en 2027</td></tr>
+</tbody>
+</table>
+</div>
+<p class="caption col">Sources : <a href="https://medias24.com/2026/07/11/tva-sur-les-services-numeriques-etrangers-qui-est-concerne-et-comment-ca-marche-1720053/">Médias24</a>, <a href="https://fr.le360.ma/economie/le-maroc-impose-la-tva-sur-les-services-numeriques-etrangers_GNGTBMOHLBFI7HXEYRB2Y3LVHA/">Le360</a>, <a href="https://www.fonoa.com/resources/country-tax-guides/turkiye/tax-on-digital-services">Fonoa</a>, <a href="https://www.vatupdate.com/2026/01/03/turkey-sets-digital-services-tax-at-5-for-2026-2-5-for-2027/">VATupdate</a>.</p>
+
+<div class="col">
+  <div class="note warn">
+    <span class="tag">Conséquence directe</span>
+    <p>ChatGPT Plus coûte <strong>24,00 $/mois au Maroc</strong> (20 $ + 20 % de TVA) et <strong>24,00 $/mois en Turquie</strong> (20 $ + 20 % de KDV). Strictement le même prix. La Turquie porte même une couche de DHV en plus. <strong>Sur tout produit facturé en dollar mondial, la Turquie n'offre aucun avantage fiscal — et jamais aucun avantage tout court.</strong></p>
+  </div>
+
+  <h3>Le contexte monétaire qui explique tout</h3>
+  <p>La livre turque est passée de 6,96 pour un dollar en 2020 à <strong>47,77 le 13 août 2026</strong> — une perte de 85 % en six ans, dont 17,2 % sur les seuls douze derniers mois. L'inflation turque tourne autour de 32 % en 2026. Les éditeurs ont réagi de deux façons : soit ils ont abandonné la livre (Steam, EA, Blizzard), soit ils ont indexé leurs prix sur le change (Adobe, Microsoft, Google). Ceux qui n'ont fait ni l'un ni l'autre — LinkedIn, Dropbox, Grammarly, Duolingo — sont précisément ceux où l'écart de 85 à 94 % subsiste. Ce sont aussi les plus exposés à une correction future.</p>
+</div>
+
+<div class="col">
+<section>
+  <span class="h2num">03</span>
+  <h2>Où la Turquie gagne encore</h2>
+  <p class="dek">Les services où la Turquie est aujourd'hui le meilleur prix mondial, ou très proche. C'est une liste courte, et elle est presque entièrement professionnelle.</p>
+</section>
+</div>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>Service</th><th class="n">Turquie</th><th class="n">Maroc</th><th class="n">Écart</th><th>Meilleur mondial</th><th>Verdict</th></tr></thead>
+<tbody>
+<tr class="band"><td colspan="6">Logiciel professionnel — le vrai gisement</td></tr>
+<tr><td class="svc">LinkedIn Premium Career</td><td class="n">2,30 $<br><span style="color:var(--ink-3)">₺109,99</span></td><td class="n">~39,99 $</td><td class="n g">−94 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">LinkedIn Premium Business</td><td class="n">4,60 $<br><span style="color:var(--ink-3)">₺219,99</span></td><td class="n">~59,99 $</td><td class="n g">−92 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Grammarly Premium</td><td class="n">3,87 $</td><td class="n">~29,99 $</td><td class="n g">−87 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Dropbox Plus</td><td class="n">1,67 $</td><td class="n">~11,99 $</td><td class="n g">−86 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Duolingo Super</td><td class="n">2,93 $<br><span style="color:var(--ink-3)">13,99 $/an</span></td><td class="n">non vérifié</td><td class="n g">−83 % <span style="color:var(--ink-3)">vs US</span></td><td>🇪🇬 Égypte 1,29 $</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Coursera Plus</td><td class="n">14,64 $</td><td class="n">~58,99 $</td><td class="n g">−75 %</td><td>🇮🇳 Inde 12,20 $</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Canva Pro</td><td class="n">~3,35 $</td><td class="n">~10,00 $</td><td class="n g">−66 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Adobe Creative Cloud</td><td class="n">26,55 $</td><td class="n">~59–70 $</td><td class="n g">−56 %</td><td>🇪🇬 Égypte ~32 $</td><td><span class="chip piege">Détection agressive</span></td></tr>
+<tr class="band"><td colspan="6">Gaming par abonnement</td></tr>
+<tr><td class="svc">Xbox Game Pass Ultimate</td><td class="n">11,06 $<br><span style="color:var(--ink-3)">₺529</span></td><td class="n f">non vendu</td><td class="n g">−52 % <span style="color:var(--ink-3)">vs US</span></td><td>🇯🇵 Japon 9,72 $</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Xbox Game Pass Essential 12 mois</td><td class="n">3,76 $/m<br><span style="color:var(--ink-3)">₺2 159/an</span></td><td class="n f">non vendu</td><td class="n g">meilleur mondial</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Epic Games Store</td><td class="n">encore en ₺</td><td class="n">USD MENA</td><td class="n g">−41 à −86 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr class="band"><td colspan="6">Streaming — la Turquie n'est plus n°1, mais reste bien placée</td></tr>
+<tr><td class="svc">Amazon Prime</td><td class="n">1,46 $<br><span style="color:var(--ink-3)">₺69,90</span></td><td class="n f">pas d'offre</td><td class="n g">meilleur mondial</td><td>🇹🇷 Turquie</td><td><span class="chip tr">Turquie seule</span></td></tr>
+<tr><td class="svc">HBO Max</td><td class="n">4,81 $</td><td class="n f">indisponible</td><td class="n">—</td><td>🇮🇩 Indonésie 2,90 $</td><td><span class="chip tr">Turquie seule</span></td></tr>
+<tr><td class="svc">Spotify Individuel</td><td class="n">2,07 $<br><span style="color:var(--ink-3)">₺99</span></td><td class="n">4,84 $</td><td class="n g">−57 %</td><td>🇳🇬 Nigeria 1,18 $</td><td><span class="chip piege">Verrou BIN</span></td></tr>
+<tr><td class="svc">YouTube Premium</td><td class="n">2,51 $<br><span style="color:var(--ink-3)">₺119,99</span></td><td class="n">~7,53 $</td><td class="n g">−67 %</td><td>🇮🇳 Inde 1,56 $</td><td><span class="chip piege">Résiliations</span></td></tr>
+<tr class="band"><td colspan="6">Stores mobiles — la Turquie reste championne du monde</td></tr>
+<tr><td class="svc">Google Play — Monument Valley</td><td class="n">0,23 $</td><td class="n">4,08 $</td><td class="n g">−94 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Google Play — GTA San Andreas</td><td class="n">0,63 $</td><td class="n">7,09 $</td><td class="n g">−91 %</td><td>🇹🇷 Turquie</td><td><span class="chip gain">Gain réel</span></td></tr>
+<tr><td class="svc">Google Play — Minecraft PE</td><td class="n">2,28 $</td><td class="n">9,03 $</td><td class="n g">−75 %</td><td>🇪🇬 Égypte 0,36 $</td><td><span class="chip gain">Gain réel</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="caption col">Taux au 14 août 2026 : 1 USD = 47,81 TRY = 9,3013 MAD. Les prix Google Play et Xbox proviennent d'interrogations en direct des API publiques (<span class="mono">play.google.com</span>, <span class="mono">displaycatalog.mp.microsoft.com</span>). Les prix LinkedIn, Grammarly, Dropbox et Canva proviennent d'agrégateurs tarifaires et n'ont pas pu être recoupés sur les sites officiels — voir la section 09.</p>
+
+<div class="col">
+<section>
+  <span class="h2num">04</span>
+  <h2>Où la Turquie a perdu — et les pièges</h2>
+  <p class="dek">Trois catégories distinctes : les services où la Turquie a été rattrapée, ceux où changer de pays ne sert à rien, et ceux où la Turquie est devenue <em>plus chère</em> que le Maroc ou que les États-Unis.</p>
+</section>
+</div>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>Service</th><th class="n">Turquie</th><th class="n">Maroc</th><th class="n">Meilleur ailleurs</th><th>Ce qui s'est passé</th><th>Verdict</th></tr></thead>
+<tbody>
+<tr class="band"><td colspan="6">Piège — la Turquie est devenue plus chère</td></tr>
+<tr><td class="svc">Google AI Pro (5 To)</td><td class="n l">31,82 $</td><td class="n">non vérifié</td><td class="n">🇺🇸 19,99 $</td><td>Hausse de <strong>+75 % le 11 août 2026</strong>, il y a trois jours</td><td><span class="chip piege">+59 % vs US</span></td></tr>
+<tr><td class="svc">Google AI Plus (2 To)</td><td class="n l">7,54 $</td><td class="n">non vérifié</td><td class="n">🇺🇸 4,99 $</td><td>₺204,99 → ₺359,99 le 11 août 2026</td><td><span class="chip piege">+51 % vs US</span></td></tr>
+<tr><td class="svc">Claude Pro — Inde</td><td class="n">24,00 $</td><td class="n">24,00 $</td><td class="n">🇺🇸 17 $/an</td><td>L'Inde a été « localisée » en juil. 2026 — à <strong>21 $</strong>, plus cher qu'aux US</td><td><span class="chip piege">Localisé ≠ moins cher</span></td></tr>
+<tr><td class="svc">App Store — palier standard</td><td class="n l">6,27 $</td><td class="n">5,99 $</td><td class="n">🇪🇬 Égypte</td><td>Réindexations Apple : le palier turc dépasse le tarif américain</td><td><span class="chip piege">Piège</span></td></tr>
+<tr><td class="svc">Netflix (toutes formules)</td><td class="n">3,97–7,95 $</td><td class="n">4,84–12,36 $</td><td class="n">🇵🇰 0,90 $</td><td>+31 % <em>en dollars</em> depuis 2021 malgré la dévaluation</td><td><span class="chip piege">Rattrapée</span></td></tr>
+<tr class="band"><td colspan="6">Nul — changer de pays ne rapporte rien</td></tr>
+<tr><td class="svc">Steam (tous jeux)</td><td class="n">MENA-USD</td><td class="n">MENA-USD</td><td class="n">🇺🇦 −18 %</td><td>Valve a supprimé la livre turque le <strong>20 nov. 2023</strong>. Maroc et Turquie sont dans la <strong>même zone</strong></td><td><span class="chip nul">0 %</span></td></tr>
+<tr><td class="svc">ChatGPT Plus / Pro</td><td class="n">24,00 $</td><td class="n">24,00 $</td><td class="n">🇮🇳 Go 4,18 $</td><td>Prix mondial USD + 20 % de taxe locale des deux côtés</td><td><span class="chip nul">0 %</span></td></tr>
+<tr><td class="svc">Claude, Perplexity, Midjourney</td><td class="n">= Maroc</td><td class="n">= Turquie</td><td class="n">aucun</td><td>Prix mondial unique en dollars</td><td><span class="chip nul">0 %</span></td></tr>
+<tr><td class="svc">Cursor, GitHub Copilot, ElevenLabs</td><td class="n">= Maroc</td><td class="n">= Turquie</td><td class="n">aucun</td><td>Prix mondial unique en dollars</td><td><span class="chip nul">0 %</span></td></tr>
+<tr><td class="svc">Figma, Notion, Asana, Monday</td><td class="n">= Maroc</td><td class="n">= Turquie</td><td class="n">aucun</td><td>Prix mondial unique. Trello/Atlassian n'affiche même pas de devise locale</td><td><span class="chip nul">0 %</span></td></tr>
+<tr><td class="svc">JetBrains, 1Password</td><td class="n">= Maroc</td><td class="n">= Turquie</td><td class="n">aucun</td><td>249 $ ou 249 € partout. Remises étudiant / open source uniquement</td><td><span class="chip nul">0 %</span></td></tr>
+<tr><td class="svc">Vercel, Netlify, DigitalOcean, Cloudflare</td><td class="n">= Maroc</td><td class="n">= Turquie</td><td class="n">aucun</td><td>Prix mondial USD. Chez Vercel, la « regional pricing » porte sur l'usage, pas l'abonnement</td><td><span class="chip nul">0 %</span></td></tr>
+<tr><td class="svc">NordVPN, Surfshark, ExpressVPN</td><td class="n">≈ Maroc</td><td class="n">≈ Turquie</td><td class="n">aucun</td><td>La remise vient de la <strong>durée</strong> (−73 à −85 % sur 2 ans), jamais du pays</td><td><span class="chip nul">0 %</span></td></tr>
+<tr class="band"><td colspan="6">Le Maroc est déjà mieux placé que la Turquie</td></tr>
+<tr><td class="svc">Xbox PC Game Pass</td><td class="n">8,76 $</td><td class="n g">6,45 $<br><span style="color:var(--ink-3)">60 MAD</span></td><td class="n">🇻🇳 3,03 $</td><td>Le Maroc a été <strong>oublié par les hausses</strong> depuis juillet 2024</td><td><span class="chip gain">Ne rien faire</span></td></tr>
+<tr><td class="svc">Microsoft 365 Famille</td><td class="n">85,83 $/an</td><td class="n">110,02 $/an</td><td class="n">—</td><td>Microsoft a re-tarifé la Turquie <strong>×20 entre 2025 et 2026</strong>. Gain résiduel : 22 %</td><td><span class="chip nul">Marginal</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="caption col">Zone Steam « MENA-USD » : Bahreïn, Égypte, Irak, Jordanie, Liban, Oman, Palestine, Turquie, Yémen, Algérie, Libye, <strong>Maroc</strong>, Tunisie, Soudan. Source : <a href="https://partner.steamgames.com/doc/store/pricing/currencies">Steamworks</a>. Panier de 4 jeux AAA relevé en direct le 14/08/2026 : 149,96 $ en Turquie comme au Maroc, contre 219,96 $ aux États-Unis.</p>
+
+<div class="col">
+<section>
+  <span class="h2num">05</span>
+  <h2>Les pièges spécifiques au Maroc</h2>
+  <p class="dek">Le Maroc n'est pas uniformément mal traité. Il est bien servi sur deux plateformes et très mal sur trois autres — et cette asymétrie est mal connue.</p>
+</section>
+</div>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>Plateforme</th><th>Vitrine marocaine ?</th><th class="n">Prix Maroc</th><th class="n">Référence US</th><th>Verdict</th></tr></thead>
+<tbody>
+<tr><td class="svc">Steam</td><td>Oui — zone MENA-USD</td><td class="n">149,96 $ <span style="color:var(--ink-3)">(panier)</span></td><td class="n">219,96 $</td><td><span class="chip gain">Bien servi −32 %</span></td></tr>
+<tr><td class="svc">Xbox PC Game Pass</td><td>Oui — facturé en MAD</td><td class="n">6,45 $ <span style="color:var(--ink-3)">60 MAD</span></td><td class="n">13,99 $</td><td><span class="chip gain">Bien servi −54 %</span></td></tr>
+<tr><td class="svc">Epic Games Store</td><td>Oui — USD régionalisé</td><td class="n">−40 à −48 %</td><td class="n">—</td><td><span class="chip gain">Correct</span></td></tr>
+<tr><td class="svc">Microsoft 365</td><td>Oui — grille officielle en MAD</td><td class="n">829,99 MAD/an</td><td class="n">99,99 $/an</td><td><span class="chip gain">Correct</span></td></tr>
+<tr><td class="svc">Google Play</td><td>Oui — en MAD</td><td class="n l">+29 % <span style="color:var(--ink-3)">Minecraft PE</span></td><td class="n">6,99 $</td><td><span class="chip piege">Plus cher qu'aux US</span></td></tr>
+<tr><td class="svc">Apple App Store</td><td>Oui — mais <strong>facturé en USD au tarif américain</strong></td><td class="n l">5,99 $</td><td class="n">5,99 $</td><td><span class="chip piege">Aucune décote</span></td></tr>
+<tr><td class="svc">Xbox Store — Minecraft PC</td><td>Oui — en MAD</td><td class="n l">44,51 $ <span style="color:var(--ink-3)">414 MAD</span></td><td class="n">29,99 $</td><td><span class="chip piege">+48 %, le plus cher au monde</span></td></tr>
+<tr><td class="svc">Deezer</td><td>Non — facturé en USD</td><td class="n l">10,99 $</td><td class="n">—</td><td><span class="chip piege">+127 % vs Spotify MA</span></td></tr>
+<tr><td class="svc">PlayStation Store</td><td>Non — <span class="mono">/en-ma</span> redirige vers <span class="mono">/en-us</span></td><td class="n">64,99 $/an <span style="color:var(--ink-3)">via KSA</span></td><td class="n">79,99 $/an</td><td><span class="chip nul">Absent</span></td></tr>
+<tr><td class="svc">Nintendo eShop</td><td>Non — pays non supporté</td><td class="n f">—</td><td class="n">19,99 $/an</td><td><span class="chip nul">Absent</span></td></tr>
+<tr><td class="svc">Xbox Game Pass Ultimate / Essential</td><td>Non commercialisés</td><td class="n f">—</td><td class="n">22,99 $/m</td><td><span class="chip nul">Absent</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="caption col">Vérifications en direct le 14/08/2026 : <span class="mono">itunes.apple.com/lookup?country=ma</span> renvoie Procreate Pocket à 5,99 $, exactement le tarif américain. <span class="mono">store.playstation.com/en-ma</span> renvoie un HTTP 302 vers <span class="mono">/en-us</span>.</p>
+
+<div class="col">
+  <div class="note cool">
+    <span class="tag">Deux gestes gratuits, immédiats</span>
+    <p><strong>Migrer de Deezer vers Spotify Maroc</strong> — 4,84 $ contre 10,99 $ pour un service équivalent, sans aucune manipulation. Deezer ne propose pas de tarif marocain et facture au tarif international.</p>
+    <p><strong>Ne pas acheter Minecraft depuis le store marocain.</strong> À 414 MAD (44,51 $), le Maroc est le pays le plus cher du monde relevé sur ce titre — 48 % au-dessus des États-Unis et 130 % au-dessus du Brésil.</p>
+  </div>
+</div>
+
+<div class="col">
+<section>
+  <span class="h2num">06</span>
+  <h2>Classement mondial des pays</h2>
+  <p class="dek">Dix-huit destinations évaluées sur la remise moyenne face au Maroc, la catégorie où chacune excelle, la difficulté d'accès réelle et la stabilité tarifaire. La note de facilité va de A (accessible) à E (pratiquement impossible depuis le Maroc).</p>
+</section>
+</div>
+
+<div class="countries">
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇮🇳 Inde</span><span class="cc-rank">01</span></div><span class="cc-disc">−60 à −75 %</span><span class="cc-body">La <b>nouvelle référence mondiale</b>, et le seul grand marché où les prix <b>baissent</b> : Spotify a réduit ses tarifs de 30 % en mai 2026. Meilleur sur ChatGPT Go (4,18 $), YouTube Premium, Amazon Prime, GeForce NOW, PS Plus.</span><div class="cc-meta"><span>Verrou : carte ou UPI indienne</span><span>Stabilité ★★★★☆</span><span class="grade b">Facilité B</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇹🇷 Turquie</span><span class="cc-rank">02</span></div><span class="cc-disc">−55 à −80 %</span><span class="cc-body">Devenue une destination <b>spécialisée</b> : LinkedIn, Adobe, Canva, Game Pass, Duolingo, Google Play. A perdu Steam, Netflix et Microsoft. <b>Le point faible est la stabilité</b> — sept reclassements majeurs depuis 2022.</span><div class="cc-meta"><span>Verrou : carte TR + Apple/Google ID TR</span><span>Stabilité ★★☆☆☆</span><span class="grade b">Facilité B</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇵🇰 Pakistan</span><span class="cc-rank">03</span></div><span class="cc-disc">−65 à −80 %</span><span class="cc-body">Champion mondial de la vidéo : <b>Netflix Mobile à 0,90 $</b>, Premium 4K à 3,96 $. Crunchyroll à ~1,01 $. Mais désert ailleurs — pas de Disney+, pas de Game Pass, pas de grille locale sur la plupart des SaaS.</span><div class="cc-meta"><span>Verrou : carte PK indispensable</span><span>Stabilité ★★★☆☆</span><span class="grade d">Facilité D</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇯🇵 Japon</span><span class="cc-rank">04</span></div><span class="cc-disc">−35 à −58 %</span><span class="cc-body">La surprise du dossier. <b>Meilleur pays au monde pour Xbox Game Pass Ultimate</b> (9,72 $) <b>et pour PlayStation Plus</b> (42,66 $/an Essential, −47 % vs US). Le yen faible a fait du Japon une destination gaming de premier plan.</span><div class="cc-meta"><span>Verrou : carte JP / cartes cadeaux</span><span>Stabilité ★★★★☆</span><span class="grade c">Facilité C</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇪🇬 Égypte</span><span class="cc-rank">05</span></div><span class="cc-disc">−55 à −70 %</span><span class="cc-body">Meilleur relevé mondial pour <b>Adobe Creative Cloud</b> (~32 $) et pour les <b>applications mobiles</b> (Minecraft PE à 0,36 $). Netflix Standard à 3,38 $. Contre-exemple utile : Crunchyroll y est cher (6,37 $).</span><div class="cc-meta"><span>Verrou : contrôle des changes strict</span><span>Stabilité ★★☆☆☆</span><span class="grade c">Facilité C</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇺🇦 Ukraine</span><span class="cc-rank">06</span></div><span class="cc-disc">−35 à −55 %</span><span class="cc-body"><b>Meilleure région Steam au monde</b> — panier 4 jeux à 122,93 $ contre 149,96 $ au Maroc et 219,96 $ aux US. Également championne sur Google One (~0,45 $). Aucun intérêt sur Spotify ou Netflix.</span><div class="cc-meta"><span>Verrou : carte UA · contexte de guerre</span><span>Stabilité ★★★☆☆</span><span class="grade d">Facilité D</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇳🇬 Nigeria</span><span class="cc-rank">07</span></div><span class="cc-disc">−55 à −75 %</span><span class="cc-body"><b>Spotify le moins cher au monde</b> : 1,18 $ individuel, 1,84 $ famille pour 6. Mais <b>piège sur Steam</b> — le Nigeria paie le tarif américain plein. Netflix y a augmenté trois fois en deux ans.</span><div class="cc-meta"><span>Verrou : plafonds FX bancaires très bas</span><span>Stabilité ★★☆☆☆</span><span class="grade d">Facilité D</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇵🇭 Philippines</span><span class="cc-rank">08</span></div><span class="cc-disc">−50 à −65 %</span><span class="cc-body">Meilleure sur Prime Video, PS Plus, GeForce NOW, Disney+. <b>Avantage pratique réel</b> : les e-wallets GCash et Maya sont bien plus accessibles qu'une carte bancaire locale.</span><div class="cc-meta"><span>Verrou : GCash / Maya</span><span>Stabilité ★★★★☆</span><span class="grade c">Facilité C</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇮🇩 Indonésie</span><span class="cc-rank">09</span></div><span class="cc-disc">−45 à −60 %</span><span class="cc-body">Championne <b>HBO Max</b> (~2,90 $) et Disney+ (2,18 $). Bonne région Steam (140,86 $, −6 % vs Maroc). Roupie stable, donc prix prévisibles.</span><div class="cc-meta"><span>Verrou : OVO / DANA / GoPay</span><span>Stabilité ★★★★☆</span><span class="grade c">Facilité C</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇻🇳 Vietnam</span><span class="cc-rank">10</span></div><span class="cc-disc">−50 à −65 %</span><span class="cc-body">Meilleur mondial sur <b>PC Game Pass</b> (3,03 $) et très bon sur Google One. Le dong est très stable. Mais l'écosystème de paiement est presque fermé aux non-résidents.</span><div class="cc-meta"><span>Verrou : carte VN quasi obligatoire</span><span>Stabilité ★★★☆☆</span><span class="grade d">Facilité D</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇧🇷 Brésil</span><span class="cc-rank">11</span></div><span class="cc-disc">−40 à −60 %</span><span class="cc-body">Meilleur sur Disney+ (~3,47 $), Minecraft PC (19,10 $ contre 44,51 $ au Maroc) et GeForce NOW. A <b>conservé sa monnaie sur Steam</b> contrairement à la Turquie. Verrou dur : le <b>CPF</b>, identifiant fiscal brésilien, est exigé par plusieurs plateformes.</span><div class="cc-meta"><span>Verrou : CPF + carte BR</span><span>Stabilité ★★★★☆</span><span class="grade c">Facilité C</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇿🇦 Afrique du Sud</span><span class="cc-rank">12</span></div><span class="cc-disc weak">−10 à −30 %</span><span class="cc-body">Gain quasi nul sur le streaming, mais <b>meilleure région Nintendo eShop vérifiée</b> : NSO Famille à 28,37 $/an pour 8 comptes, Expansion Pack à 38,88 $ contre 49,99 $ aux US. Marché mature, anglophone, très stable.</span><div class="cc-meta"><span>Verrou : carte ZA / cartes cadeaux</span><span>Stabilité ★★★★★</span><span class="grade b">Facilité B</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇰🇿 Kazakhstan</span><span class="cc-rank">13</span></div><span class="cc-disc weak">−20 à −40 %</span><span class="cc-body">Peu d'intérêt sur le streaming, mais <b>bonne région Steam</b> (a gardé le tenge). <b>Atout unique</b> : c'est l'un des rares pays où un non-résident peut ouvrir un compte bancaire et obtenir une carte locale assez facilement — d'où sa popularité réelle.</span><div class="cc-meta"><span>Verrou : faible, carte accessible</span><span>Stabilité ★★★☆☆</span><span class="grade c">Facilité C</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇲🇾 Malaisie</span><span class="cc-rank">14</span></div><span class="cc-disc weak">−25 à −45 %</span><span class="cc-body">Aucune catégorie où elle domine. Son intérêt est la <b>fiabilité</b> : ringgit stable, très peu de reclassements. Microsoft 365 y est même <b>plus cher qu'au Maroc</b>. À réserver à qui privilégie la sécurité.</span><div class="cc-meta"><span>Verrou : carte MY</span><span>Stabilité ★★★★★</span><span class="grade b">Facilité B</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇰🇪 Kenya</span><span class="cc-rank">15</span></div><span class="cc-disc weak">−25 à −45 %</span><span class="cc-body">Netflix correct (~2,32 $). Peu de services localisés. M-Pesa domine et les cartes bancaires sont peu répandues, ce qui ferme la plupart des souscriptions internationales.</span><div class="cc-meta"><span>Verrou : M-Pesa</span><span>Stabilité ★★★☆☆</span><span class="grade d">Facilité D</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇨🇴 Colombie</span><span class="cc-rank">16</span></div><span class="cc-disc weak">−20 à −40 %</span><span class="cc-body">Gain marginal. Spotify y est <b>plus cher qu'au Maroc</b> et Adobe y serait le plus cher au monde selon les agrégateurs. Correcte sur Disney+ et PS Plus uniquement.</span><div class="cc-meta"><span>Verrou : carte CO</span><span>Stabilité ★★★★☆</span><span class="grade c">Facilité C</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇧🇩 Bangladesh · 🇱🇰 Sri Lanka</span><span class="cc-rank">17</span></div><span class="cc-disc weak">−40 à −60 %</span><span class="cc-body">Prix théoriquement très bas (Spotify 1,78 $ et 2,23 $, Crunchyroll ~1,05 $), mais <b>écosystèmes de paiement quasi inaccessibles</b> à un étranger : bKash au Bangladesh, très peu de services localisés au Sri Lanka.</span><div class="cc-meta"><span>Verrou : système bancaire fermé</span><span>Stabilité ★★☆☆☆</span><span class="grade e">Facilité E</span></div></div>
+
+  <div class="cc"><div class="cc-top"><span class="cc-name">🇦🇷 Argentine</span><span class="cc-rank">18</span></div><span class="cc-disc neg">+10 à +40 %</span><span class="cc-body"><b>L'effondrement de 2026.</b> Netflix Standard y coûte <b>17,31 $ taxes comprises contre 8,60 $ au Maroc</b> — deux fois plus cher. Steam l'a basculée en USD en 2023. Ne subsistent que Canva, Discord et EA Play. <b>Tous les classements qui la citent en tête sont périmés.</b></span><div class="cc-meta"><span>Verrou : empilement fiscal ~23 %</span><span>Stabilité ★☆☆☆☆</span><span class="grade e">Facilité E</span></div></div>
+</div>
+<p class="caption col">Les notes de facilité sont calculées du point de vue d'un résident marocain, en tenant compte du verrou dominant de 2026 : l'obligation d'un moyen de paiement émis dans le pays visé. Aucune destination n'obtient A — le VPN seul ne suffit plus nulle part.</p>
+
+<div class="col">
+<section>
+  <span class="h2num">07</span>
+  <h2>Le panier annuel, chiffré</h2>
+  <p class="dek">Sept abonnements courants — Netflix Standard, Spotify Individuel, YouTube Premium, ChatGPT, Microsoft 365 Personnel, LinkedIn Premium Career, Xbox Game Pass Ultimate. Trois scénarios comparés.</p>
+</section>
+</div>
+
+<div class="basket">
+  <div class="bk hero"><span class="who">Maroc — référence</span><span class="amt">1 385 $</span><span class="sub">12 879 MAD / an</span></div>
+  <div class="bk mid"><span class="who">Tout en Turquie</span><span class="amt">645 $</span><span class="sub">6 002 MAD · −53 %</span></div>
+  <div class="bk best"><span class="who">Optimal multi-pays</span><span class="amt">331 $</span><span class="sub">3 079 MAD · −76 %</span></div>
+</div>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>Service</th><th class="n">Maroc</th><th class="n">Turquie</th><th>Meilleur pays</th><th class="n">Meilleur prix</th><th class="n">Gain annuel</th></tr></thead>
+<tbody>
+<tr><td class="svc">LinkedIn Premium Career</td><td class="n">39,99 $</td><td class="n">2,30 $</td><td>🇹🇷 Turquie</td><td class="n">2,30 $</td><td class="n g">452 $</td></tr>
+<tr><td class="svc">ChatGPT (Plus → Go)</td><td class="n">24,00 $</td><td class="n">24,00 $</td><td>🇮🇳 Inde — ChatGPT Go</td><td class="n">4,18 $</td><td class="n g">238 $</td></tr>
+<tr><td class="svc">Xbox Game Pass Ultimate</td><td class="n">22,99 $ <span style="color:var(--ink-3)">(réf. US)</span></td><td class="n">11,06 $</td><td>🇯🇵 Japon</td><td class="n">9,72 $</td><td class="n g">159 $</td></tr>
+<tr><td class="svc">YouTube Premium</td><td class="n">7,53 $</td><td class="n">2,51 $</td><td>🇮🇳 Inde</td><td class="n">1,56 $</td><td class="n g">72 $</td></tr>
+<tr><td class="svc">Netflix Standard</td><td class="n">8,60 $</td><td class="n">6,07 $</td><td>🇵🇰 Pakistan</td><td class="n">2,88 $</td><td class="n g">69 $</td></tr>
+<tr><td class="svc">Spotify Individuel</td><td class="n">4,84 $</td><td class="n">2,07 $</td><td>🇳🇬 Nigeria</td><td class="n">1,18 $</td><td class="n g">44 $</td></tr>
+<tr><td class="svc">Microsoft 365 Personnel</td><td class="n">7,44 $</td><td class="n">5,76 $</td><td>🇹🇷 Turquie</td><td class="n">5,76 $</td><td class="n g">20 $</td></tr>
+<tr><td class="svc" style="border-top:2px solid var(--ink)"><strong>Total mensuel</strong></td><td class="n" style="border-top:2px solid var(--ink)"><strong>115,39 $</strong></td><td class="n" style="border-top:2px solid var(--ink)"><strong>53,77 $</strong></td><td style="border-top:2px solid var(--ink)">—</td><td class="n" style="border-top:2px solid var(--ink)"><strong>27,58 $</strong></td><td class="n g" style="border-top:2px solid var(--ink)"><strong>1 054 $</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="col">
+  <h4>D'où vient réellement l'argent</h4>
+</div>
+<div class="col bars">
+  <div class="bar"><span class="bl">LinkedIn Premium</span><span class="bt"><span class="bf" style="width:100%"></span></span><span class="bv">43 %</span></div>
+  <div class="bar"><span class="bl">ChatGPT</span><span class="bt"><span class="bf" style="width:52.6%"></span></span><span class="bv">23 %</span></div>
+  <div class="bar"><span class="bl">Xbox Game Pass</span><span class="bt"><span class="bf" style="width:35.2%"></span></span><span class="bv">15 %</span></div>
+  <div class="bar"><span class="bl">YouTube Premium</span><span class="bt"><span class="bf" style="width:15.8%"></span></span><span class="bv">7 %</span></div>
+  <div class="bar"><span class="bl">Netflix</span><span class="bt"><span class="bf" style="width:15.2%"></span></span><span class="bv">7 %</span></div>
+  <div class="bar"><span class="bl">Spotify</span><span class="bt"><span class="bf" style="width:9.7%"></span></span><span class="bv">4 %</span></div>
+  <div class="bar"><span class="bl">Microsoft 365</span><span class="bt"><span class="bf" style="width:4.5%"></span></span><span class="bv">2 %</span></div>
+</div>
+
+<div class="col">
+  <p class="caption" style="margin-bottom:26px">Part de chaque service dans l'économie annuelle totale de 1 054 $. Trois services professionnels concentrent 81 % du gain.</p>
+
+  <div class="note warn">
+    <span class="tag">Le chiffre à retenir pour une décision réelle</span>
+    <p>Les 1 054 $ (9 800 MAD) supposent que <em>tout</em> fonctionne : sept pays différents, sept moyens de paiement locaux, sept comptes maintenus en violation des conditions d'utilisation. C'est un plafond théorique, pas un plan.</p>
+    <p>En s'en tenant aux leviers <strong>légitimes</strong> — plan famille, offres étudiantes, facturation annuelle, offres opérateurs, alternatives libres — l'économie retombe à <strong>25–30 %, soit 3 100 à 3 700 MAD par an</strong>. L'écart entre les deux chiffres, c'est exactement le prix du risque.</p>
+  </div>
+</div>
+
+<div class="col">
+<section>
+  <span class="h2num">08</span>
+  <h2>Ce qui bloque réellement</h2>
+  <p class="dek">Le contournement par VPN appartient au passé. Voici l'état des verrous en août 2026, et ce que les éditeurs vérifient effectivement.</p>
+</section>
+</div>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>Plateforme</th><th>Ce qui est vérifié</th><th>Le VPN suffit-il&nbsp;?</th><th>Conséquence documentée</th></tr></thead>
+<tbody>
+<tr><td class="svc">YouTube / Google</td><td>Moyen de paiement <strong>+</strong> adresse de facturation <strong>+</strong> région du compte. Usage &gt; 30 j hors pays</td><td class="l">Non</td><td><strong>Résiliations en masse en juin 2024</strong> et répression du 26 sept. 2025. Le plus agressif du panel</td></tr>
+<tr><td class="svc">Adobe</td><td>Adresse, empreinte navigateur, fuseau horaire, cookies, usage réel</td><td class="l">Non</td><td><strong>Migration forcée</strong> vers la grille du pays réel sous 30 jours ; annulations pour « activité frauduleuse »</td></tr>
+<tr><td class="svc">LinkedIn</td><td>Adresse de facturation + pays de la carte. <strong>Le premier achat fige la devise</strong></td><td class="l">Non</td><td>Pour changer, il faut résilier, attendre la fin du cycle, puis re-souscrire avec une carte du pays</td></tr>
+<tr><td class="svc">Netflix</td><td>Pays d'émission de la carte (contrôle BIN)</td><td class="l">Non</td><td>Carte non-turque rejetée sur un compte turc. Cartes cadeaux seule voie</td></tr>
+<tr><td class="svc">Spotify</td><td>Moyen de paiement émis dans le pays. Gratuit : 14 j max hors du pays</td><td class="l">Non</td><td>Pas de bannissement, mais <strong>réversion régionale forcée au renouvellement</strong></td></tr>
+<tr><td class="svc">PlayStation Network</td><td>Pays fixé à la création, <strong>non modifiable</strong>. Codes de recharge liés au pays</td><td class="l">Non</td><td>Il faut créer un 2<sup>e</sup> compte. Portefeuille et PS Plus non transférables entre comptes</td></tr>
+<tr><td class="svc">Google Play</td><td>Présence physique + moyen de paiement local</td><td class="l">Non</td><td>Changement <strong>1 fois par 90 jours</strong>. Solde inaccessible, Play Points perdus</td></tr>
+<tr><td class="svc">Steam</td><td>IP + achat confirmé avec une carte du nouveau pays</td><td class="l">Non</td><td>Pays <strong>verrouillé ~3 mois</strong>. Conversion forcée des portefeuilles turcs en nov. 2023</td></tr>
+<tr><td class="svc">Apple App Store</td><td>Solde à zéro, abonnements annulés, moyen de paiement + adresse du pays</td><td class="l">Non</td><td>Perte du contenu acheté dans l'ancien store</td></tr>
+<tr><td class="svc">Udemy</td><td>Géolocalisation — <strong>PPP officiellement assumé</strong></td><td class="g">Sans objet</td><td>Le seul du panel où l'arbitrage régional est de facto toléré</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="col">
+  <h3>Les moyens de paiement, un par un</h3>
+  <p><strong>Wise et Revolut ne sont pas ouverts aux résidents marocains</strong> — et même avec une carte européenne, le BIN reste européen, donc rejeté sur un compte turc. Ces cartes ne résolvent pas le problème.</p>
+  <p><strong>Papara est à proscrire.</strong> Le portefeuille turc le plus populaire a été placé sous administration du fonds de garantie turc le 27 mai 2025 (opération judiciaire pour blanchiment, 5 milliards de livres saisis), puis <strong>sa licence a été annulée par la Banque centrale de Turquie le 30 octobre 2025</strong>. Les utilisateurs ont dû passer par une procédure de restitution. C'est le cas d'école du risque de contrepartie sur un instrument étranger non régulé chez vous.</p>
+  <p><strong>Les revendeurs de clés</strong> — G2A, Kinguin, Eneba — sont des places de marché de vendeurs tiers, pas des vendeurs. L'origine d'une clé n'est jamais garantie et la révocation reste possible après activation si l'éditeur détecte une fraude en amont. Précédent documenté : G2A a versé 39 600 $ au studio Wube (Factorio) en 2019 après que 198 clés signalées eurent été confirmées comme ayant transité par la plateforme.</p>
+  <p><strong>Les comptes « premium » vendus par des revendeurs marocains</strong> à 200–250 MAD sont des comptes partagés ou des licences détournées, révocables à tout moment. Ce ne sont pas des tarifs officiels et ils n'apparaissent nulle part dans les tableaux ci-dessus.</p>
+
+  <h3>Ce que disent les conditions d'utilisation</h3>
+  <p>Steam est le plus explicite : <em>« vous acceptez de ne pas utiliser de proxy IP ou d'autres méthodes pour dissimuler votre lieu de résidence »</em>, et en cas de résiliation pour violation, <em>« aucun remboursement, y compris des fonds non utilisés de votre portefeuille Steam, ne sera accordé »</em>. Spotify est tout aussi net : <em>« vous ne devez accéder qu'à la version du service offerte dans votre pays de résidence »</em>. YouTube prévient que déclarer une fausse localisation expose l'abonnement à la résiliation. LinkedIn exige que les informations du profil soient véridiques.</p>
+  <p>Sur le plan du droit marocain, mentir à un éditeur étranger sur son pays de résidence n'est pas en soi une infraction pénale, et payer un abonnement étranger avec une carte marocaine dans le cadre de la dotation e-commerce est parfaitement légal. Le risque est <strong>contractuel et financier</strong> — perte de compte, de bibliothèque, de solde — pas pénal. En revanche, financer ces achats par des devises acquises hors circuit bancaire constituerait une infraction à la réglementation des changes.</p>
+
+  <div class="note cool">
+    <span class="tag">Bonne nouvelle réglementaire</span>
+    <p>La <strong>dotation e-commerce marocaine est passée à 20 000 MAD par an au 1<sup>er</sup> janvier 2026</strong> (contre 15 000 auparavant), utilisable via carte bancaire internationale ou carte virtuelle. Cela représente environ 179 $ par mois — très au-delà du besoin d'un foyer pour ses abonnements numériques.</p>
+    <p>Autrement dit : <strong>la réglementation marocaine n'est pas le facteur limitant.</strong> Rien ne vous oblige à sortir de la légalité pour payer à l'étranger. Attention toutefois, certaines banques appliquent encore des plafonds internes plus bas (CIH a communiqué sur 10 000 MAD, Attijariwafa affiche encore 15 000 sur certaines pages) — à confirmer en agence.</p>
+  </div>
+</div>
+
+<div class="col">
+<section>
+  <span class="h2num">09</span>
+  <h2>Le plan d'action</h2>
+  <p class="dek">Classé par gain réel décroissant, à risque constant. Les cinq premiers points ne violent aucune condition d'utilisation et ne demandent ni VPN, ni carte étrangère, ni changement de région.</p>
+
+  <ol class="steps">
+    <li><span class="st">Passer Spotify en plan Famille</span><span class="sd">75 MAD pour 6 personnes du même foyer, soit <b>12,50 MAD par personne</b>. C'est <b>moins cher que le tarif individuel turc converti</b> (19,30 MAD), sans aucun risque. Le meilleur arbitrage de tout le dossier, et il est parfaitement légitime.</span></li>
+    <li><span class="st">Remplacer Adobe par les alternatives libres</span><span class="sd">DaVinci Resolve, GIMP, Inkscape, Krita, Darktable. Économie de <b>plusieurs milliers de dirhams par an</b>, définitive, et sans le risque de migration forcée qu'Adobe applique aux comptes détectés hors région.</span></li>
+    <li><span class="st">Basculer tout ce qui peut l'être en facturation annuelle</span><span class="sd">Spotify Maroc 450 MAD/an au lieu de 540 (−17 %), Shahid VIP 499 MAD/an (−35 %), Midjourney et Runway −20 %, ElevenLabs 2 mois offerts, Claude 20 → 17 $, Cloudflare 25 → 20 $. Pour les VPN, l'engagement 2 ans vaut <b>−73 à −85 %</b> — vingt à quarante fois plus qu'un changement de pays.</span></li>
+    <li><span class="st">Activer les offres étudiantes et éducation</span><span class="sd">Spotify Étudiant Maroc à 23 MAD (−49 %), YouTube Premium étudiant, GitHub Student Developer Pack (gratuit, très fourni), JetBrains gratuit pour étudiants, Figma et Notion Education. <b>Le meilleur levier gratuit : demander à votre université son accès Microsoft 365 Education</b>, souvent inclus.</span></li>
+    <li><span class="st">Interroger votre opérateur sur les Pass Streaming</span><span class="sd">inwi propose des pass MBC Shahid, Anghami Plus, Viu Premium, Spotify et OSN+ facturés sur la ligne mobile ; Maroc Telecom et Orange ont des partenariats Netflix. Payer en dirhams sur facture <b>ne consomme pas votre dotation e-commerce</b> et évite tout frottement de change. Les grilles exactes ne sont pas publiées — appelez le 555, le 121 ou le 777.</span></li>
+    <li><span class="st">Ne rien faire sur Steam ni sur PC Game Pass</span><span class="sd">Le Maroc est déjà dans la zone Steam MENA-USD à −32 % du tarif américain, exactement comme la Turquie. Et PC Game Pass à 60 MAD (6,45 $) est <b>moins cher qu'en Turquie</b> (8,76 $) — le Maroc a été oublié par les hausses depuis juillet 2024. Toute manipulation ici serait une perte nette.</span></li>
+    <li><span class="st">Si — et seulement si — vous visez LinkedIn Premium</span><span class="sd">C'est le seul cas où l'écart justifie d'y réfléchir : 2,30 $ contre ~40 $. Mais sachez que <b>le premier achat fige la devise du compte à vie</b> ; si vous avez déjà acheté avec une carte marocaine, il faut résilier entièrement et attendre la fin du cycle. Et le chiffre turc vient d'agrégateurs, non recoupé sur linkedin.com — <b>à vérifier en checkout avant toute décision</b>.</span></li>
+    <li><span class="st">Éviter absolument trois choses</span><span class="sd"><b>YouTube Premium par VPN</b> — c'est le seul service du dossier où le risque documenté est la perte du compte Google, pas juste un échec de paiement. <b>Adobe par VPN</b> — migration forcée et résiliation pour fraude documentées. <b>Google Play changement de pays</b> — verrou de 90 jours, solde et Play Points perdus définitivement.</span></li>
+  </ol>
+</section>
+</div>
+
+<div class="col">
+<section>
+  <span class="h2num">10</span>
+  <h2>Ce que cette étude n'a pas pu vérifier</h2>
+  <p class="dek">Par honnêteté méthodologique, voici les trous. Aucun prix n'a été inventé pour les combler.</p>
+
+  <h3>Le problème des agrégateurs</h3>
+  <p>Une grande partie des résultats de recherche sur « prix par pays » provient de fermes de contenu générées par IA, et plusieurs produisent des chiffres <strong>manifestement faux</strong>. Deux exemples relevés pendant cette recherche : un comparateur annonce Netflix Argentine à 0,86 $ quand la presse argentine donne 14,08 $ pour la même formule — un facteur 16 ; un autre annonce PlayStation Plus Mexique à 0,45 $, ce qui est aberrant. Un troisième donnait Xbox Game Pass Ultimate Turquie à 3,74 $ quand l'API officielle Microsoft, interrogée en direct, renvoie <strong>11,06 $</strong>.</p>
+  <p>Les chiffres les plus solides de ce dossier sont ceux issus d'interrogations en direct des API publiques — Steam, Microsoft DisplayCatalog, Google Play, iTunes Lookup, Epic — et des pages officielles Spotify, Microsoft Store et Nintendo. <strong>Les prix LinkedIn, Grammarly, Dropbox, Canva, Duolingo et Coursera reposent sur des agrégateurs et doivent être considérés comme indicatifs.</strong></p>
+
+  <h3>Prix marocains introuvables</h3>
+  <p>Aucune source officielle n'a pu être obtenue pour : YouTube Premium en MAD (la page support Google est géo-restreinte ; les valeurs de 60 à 70 MAD viennent de blogs de revendeurs), LinkedIn Premium, Xbox Game Pass Ultimate, Adobe, Canva, Apple Music, Apple One, iCloud+, Google One, Crunchyroll, Deezer en MAD, Disney+ et Netflix Premium avant la hausse du 2 septembre. Le Maroc n'apparaît dans quasiment aucun tracker tarifaire international.</p>
+
+  <h3>Autres lacunes assumées</h3>
+  <ul>
+    <li><strong>Battle.net, Ubisoft+, Discord Nitro, Twitch Turbo, Roblox Premium</strong> — boutiques derrière authentification ou rendues en JavaScript, aucun prix par pays vérifié.</li>
+    <li><strong>DAZN</strong> — ni en Turquie ni au Maroc, aucune source fiable.</li>
+    <li><strong>Autodesk</strong> — aucune grille TRY ou MAD trouvée ; vendu en USD/EUR par revendeurs en EMEA.</li>
+    <li><strong>GCP et Azure</strong> — variations régionales réelles mais non chiffrées. Chez AWS en revanche, l'écart est documenté et parfaitement légal : 34,8 % entre l'Oregon et São Paulo, 19 % entre l'Irlande et Zurich. Ni la Turquie ni le Maroc n'ont de région cloud.</li>
+    <li><strong>Fiscalité argentine 2026</strong> — deux sources se contredisent (~23 % contre 59–61 % avec impôt PAIS). J'ai retenu 23 %, la source majoritaire et la plus récente, mais le point n'est pas tranché.</li>
+    <li><strong>Liste des universités marocaines référencées chez SheerID</strong> — SheerID fonctionne par liste d'établissements accrédités, pas par domaine e-mail. Un <span class="mono">.ac.ma</span> ne garantit donc pas l'éligibilité aux offres étudiantes.</li>
+    <li><strong>Grilles exactes des Pass Streaming des opérateurs marocains</strong> — inwi, Maroc Telecom et Orange ne publient pas leurs tarifs en clair.</li>
+    <li><strong>Règles de changement de région Steam, Xbox et Apple</strong> — les pages support ne sont pas rendues côté serveur ; les règles décrites correspondent à la documentation connue mais doivent être revérifiées avant toute action irréversible.</li>
+  </ul>
+</section>
+</div>
+
+<footer class="col">
+  <p><strong>Méthode.</strong> Six agents de recherche exécutés en parallèle le 14 août 2026, couvrant respectivement le streaming, le SaaS professionnel, l'IA et les outils développeur, le gaming et les stores mobiles, la mécanique de paiement et la légalité, et le classement mondial des pays. Environ 420 requêtes web et interrogations d'API. Les divergences entre agents ont été arbitrées en faveur des sources primaires : les chiffres issus des API live des plateformes priment sur ceux des agrégateurs.</p>
+  <p><strong>Taux de change au 14 août 2026</strong> — 1 USD = 47,81 TRY = 9,3013 MAD ; 1 EUR = 10,727 MAD. Sources : Bank Al-Maghrib, open.er-api.com, TradingEconomics, contrôle croisé frankfurter.dev.</p>
+  <p><strong>Avertissement.</strong> Ce dossier décrit l'état des prix et des règles, y compris les pratiques qui violent les conditions d'utilisation des éditeurs — il ne les recommande pas. Les recommandations de la section 09 sont ordonnées de la plus légitime à la plus risquée, et les huit premières n'exigent aucun contournement. Les prix évoluent vite : sept reclassements majeurs ont eu lieu en Turquie depuis 2022, dont un le 11 août 2026, trois jours avant cette étude. Aucun de ces chiffres ne constitue un conseil juridique ou fiscal.</p>
+</footer>
+
+</div>
