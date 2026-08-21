@@ -222,3 +222,17 @@ Après filtres anti-spam (ratio BL/RD ≤ 800, corroboration Majestic↔Semrush,
 | 20 | `agflow.com` ⚠ | 355 $ (50 ench.) · 21/08 21h | 14 | 10/20 | 176 | 70 | 2 615 $ | Compound agtech validé (50 ench.) — ex-startup, vérifier |
 
 **Avant tout achat** : web.archive.org (historique propre ?) + recherche marque (USPTO/EUIPO) — surtout les lignes ⚠. Les closeouts changent de prix chaque jour (11 $ → 5 $) : re-vérifier sur godaddy.com/domain-auctions. Cet inventaire se régénère quotidiennement — le forage est répétable à la demande.
+
+---
+
+## H. Forage « beauté du nom d'abord » (21/08/2026, soir)
+
+Filtre inversé sur les 591 716 .com de l'inventaire GoDaddy : aucune métrique SEO, uniquement la qualité du nom (dictionnaire anglais de 234 450 mots, 4L, 5L prononçables). **53 vrais mots anglais sont aux enchères en ce moment, la plupart à 1 $ sans enchérisseur.**
+
+**L'or du jour** : echium.com (plante/cosmétique, 22 ans, SV 1 900, 1 $) · pinesap.com (SV 3 600, 1 $) · redigest.com (nom parfait pour un résumeur IA, 29 ans, 1 $) · matchably.com (app de matching, 1 $) · galluses.com (« bretelles », SV 1 300, 11 $ closeout) · mycetes.com (mycologie, 40 $) · adipyl.com (chimie, 122 RD, 30 $) · tarpeian.com & overhaste.com (5 $ closeouts) · hogfish.com (mot courant, SV 22 200, estimé 8 033 $ — contesté à 1 525 $).
+
+**Brandables 5L à 1-11 $** : klube, swiim, krilo, vadem (32 ans), advey, gohex, nasby, bwoom, mexoo, koire.
+**4L plancher liquide** : laek 600 $ · sdam 610 $ · onef 1 275 $ · eems 1 936 $ · juyp 35 $ (entrée de gamme).
+Écartés : mhada.com (autorité publique), onett.com (lieu Nintendo).
+
+Règle des 2/3 : beau / pas cher / disponible à l'enregistrement — jamais les trois. Les beaux noms s'attrapent aux enchères, pas au registrar. Forage rejouable chaque jour.
