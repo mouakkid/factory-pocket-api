@@ -189,3 +189,36 @@ Comps publics 2026 pour calibrer une offre :
 
 ### Sources
 - [DNJournal YTD 2026](https://www.dnjournal.com/ytd-sales-charts.htm) · [Guide GoDaddy expirés 2026](https://www.godaddy.com/resources/skills/how-do-you-find-expiring-domains) · [Timeline closeouts GoDaddy](https://www.godaddy.com/help/timeline-for-godaddy-auctions-expired-domains-42743) · [NamePros — filtres ExpiredDomains](https://www.namepros.com/blog/getting-more-from-expireddomains-net.1318670/)
+
+---
+
+## G. Forage du jour — enchères expirées GoDaddy (21/08/2026)
+
+Le compte ExpiredDomains fourni a été refusé par le site (`error=1` sur deux tentatives propres — identifiants à re-vérifier). Le forage a donc été réalisé sur **l'inventaire public complet de GoDaddy Auctions** (fichier du 21/08/2026 14h02 UTC : 1 177 608 enchères expirées + closeouts, dont 591 716 .com, avec métriques Majestic TF/CF/backlinks/domaines référents, Semrush et âge — les mêmes colonnes qu'ExpiredDomains, en plus complet).
+
+Après filtres anti-spam (ratio BL/RD ≤ 800, corroboration Majestic↔Semrush, TF>0) et exclusion manuelle des pièges UDRP (typos de marques comme facwbook.com, marques pharma comme librax.com, noms de personnes), **20 trésors retenus** :
+
+| # | Domaine | Prix · fin (UTC) | Âge | TF/CF | RD | SV/mois | Est. GoDaddy | Note |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `bandito.com` | 710 $ (32 ench.) · 28/08 | 30 | 23/10 | 2 170 | 12 100 | 9 849 $ | La pépite — mot quasi-dictionnaire, revente cible 5-15 k$ |
+| 2 | `jiyo.com` | 1 161 $ (55 ench.) · 25/08 | 23 | 9/18 | 210 | 170 | 13 946 $ | 4 lettres CVCV, plancher 4L ~2-8 k$ |
+| 3 | `kwhw.com` | 150 $ (19 ench.) · 21/08 20h | 29 | 25/18 | 87 | 20 | 3 454 $ | LLLL.com, 29 ans — fin imminente |
+| 4 | `pfmagazine.com` | 150 $ (12 ench.) · 22/08 | 19 | 25/26 | 2 915 | 0 | 1 500 $ | 2 915 domaines référents — autorité média |
+| 5 | `kidneeds.com` | 1 $ (0 ench.) · 25/08 | 27 | 25/24 | 162 | 20 | 1 558 $ | Générique propre à 1 $ : miser 10-20 $ |
+| 6 | `taftp.com` | 1 $ (0 ench.) · 27/08 | 28 | 22/26 | 163 | 20 | 1 378 $ | Acronyme 5L, 28 ans |
+| 7 | `syvva.com` | 11 $ (4 ench.) · 22/08 | 25 | 24/16 | 156 | 0 | 1 388 $ | Brandable 5L + âge + autorité |
+| 8 | `ucisl.com` | 16 $ (5 ench.) · 22/08 | 16 | 35/33 | 144 | 70 | 1 969 $ | TF 35 — plus forte autorité sous 20 $ |
+| 9 | `odspec.com` | 1 $ (1 ench.) · 22/08 | 25 | 18/12 | 24 | 480 | 1 931 $ | Compact, 480 recherches/mois |
+| 10 | `jacorp.com` | 1 $ (1 ench.) · 23/08 | 27 | 2/3 | 203 | 2 900 | 3 798 $ | 2 900 recherches/mois |
+| 11 | `vcsol.com` | 1 $ (1 ench.) · 24/08 | 16 | 25/14 | 30 | 0 | 1 829 $ | Court, vendable VC/fintech |
+| 12 | `olebobs.com` | 1 $ (0 ench.) · 25/08 | 23 | 29/23 | 38 | 0 | 1 189 $ | TF 29, liens ultra-propres |
+| 13 | `ethernetaudio.com` | 5 $ closeout | 23 | 22/17 | 22 | 0 | 1 452 $ | Terme technique générique (AoIP) à 5 $ |
+| 14 | `aculsia.com` | 11 $ closeout | 24 | 14/14 | 123 | 0 | 796 $ | Brandable propre, 24 ans |
+| 15 | `avidergo.com` | 5 $ closeout | 28 | 18/10 | 19 | 0 | 1 493 $ | Ergonomie/bureau, 28 ans |
+| 16 | `chyten.com` ⚠ | 1 $ (0 ench.) · 26/08 | 27 | 26/16 | 82 | 20 | 1 923 $ | Ex-marque tutorat — vérifier dissolution |
+| 17 | `arkahost.com` ⚠ | 1 $ (0 ench.) · 25/08 | 11 | 29/29 | 271 | 40 | 2 639 $ | 115k BL/271 RD — auditer le spam |
+| 18 | `llnyc.com` ⚠ | 1 $ (1 ench.) · 27/08 | 20 | 9/17 | 320 | 20 | 1 533 $ | Ex-magazine immo NYC défunt |
+| 19 | `elcantil.com` ⚠ | 6 $ (2 ench.) · 25/08 | 29 | 24/17 | 178 | 0 | 2 082 $ | Possible hôtel actif homonyme — vérifier |
+| 20 | `agflow.com` ⚠ | 355 $ (50 ench.) · 21/08 21h | 14 | 10/20 | 176 | 70 | 2 615 $ | Compound agtech validé (50 ench.) — ex-startup, vérifier |
+
+**Avant tout achat** : web.archive.org (historique propre ?) + recherche marque (USPTO/EUIPO) — surtout les lignes ⚠. Les closeouts changent de prix chaque jour (11 $ → 5 $) : re-vérifier sur godaddy.com/domain-auctions. Cet inventaire se régénère quotidiennement — le forage est répétable à la demande.
