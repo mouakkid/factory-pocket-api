@@ -1,11 +1,11 @@
-rank,domain,score,majestic_trustflow,majestic_citationflow,trust_ratio_tf_cf,referring_domains,referring_ips,referring_subnets,backlinks,refdomains_live,refdomains_homepage,refdomains_edu,refdomains_gov,wikipedia_live_article_citations,majestic_claimed_wiki_links,dmoz_listed,archive_first_year,archive_captures,other_tlds_registered,majestic_topics,wikipedia_articles
-1,sanmarcoinlamis.net,308.8,30,13,2.31,28,21,19,31,27,0,0,0,3,4,False,2001,128,4,World/Italiano (99.97%),de:San Marco in Lamis; it:Mingardo; nl:San Marco in Lamis
-2,betours.net,245.2,29,7,4.14,18,14,14,19,17,0,0,0,0,0,True,2001,180,12,Recreation/Travel (100.00%),
-3,ahida.net,244.2,28,14,2.0,29,27,26,60,28,3,1,0,0,0,False,2001,195,8,Business/Consumer Goods and Services (99.96%)|Regional/Asia (0.01%),
-4,oficinista.net,243.0,27,11,2.45,24,21,19,43,23,2,0,0,1,1,False,2001,143,3,Society/People (99.64%)|Computers/Internet/On the Web (0.31%),es:Manuel Bartual
-5,proinca.net,239.3,28,6,4.67,29,16,15,36,28,0,0,0,0,1,True,2003,150,9,Regional/Central America (100.00%),
-6,datemachi.net,236.9,32,12,2.67,21,20,20,27,20,0,0,0,0,0,True,2001,178,1,Arts/Television (100.00%),
-7,librariesvictoria.net,236.3,31,10,3.1,28,21,21,46,21,0,1,0,0,0,False,2000,216,2,Reference/Libraries (99.98%),
-8,vaporessofrance.net,234.9,27,16,1.69,142,132,125,267,130,1,2,1,0,0,False,2024,17,2,Society/Religion and Spirituality (100.00%),
-9,jamcast.net,234.3,28,9,3.11,18,15,14,22,17,0,0,0,0,0,True,1999,46,6,Business/Construction and Maintenance (100.00%),
-10,mikewatson.net,233.0,28,6,4.67,18,16,15,24,16,0,0,0,0,0,True,2000,180,10,Arts/Music (100.00%),
+rank,domain,score,link_shape,homepage_refdomain_share,majestic_trustflow,majestic_citationflow,trust_ratio_tf_cf,referring_domains,referring_ips,referring_subnets,backlinks,refdomains_live,refdomains_homepage,refdomains_edu,refdomains_gov,wikipedia_live_article_citations,majestic_claimed_wiki_links,dmoz_listed,archive_first_year,archive_captures,other_tlds_registered,majestic_topics,wikipedia_articles
+1,sanmarcoinlamis.net,308.8,ok,0.0,30,13,2.31,28,21,19,31,27,0,0,0,3,4,False,2001,128,4,World/Italiano (99.97%),de:San Marco in Lamis; it:Mingardo; nl:San Marco in Lamis
+2,betours.net,245.2,ok,0.0,29,7,4.14,18,14,14,19,17,0,0,0,0,0,True,2001,180,12,Recreation/Travel (100.00%),
+3,ahida.net,244.2,small-clean,0.103,28,14,2.0,29,27,26,60,28,3,1,0,0,0,False,2001,195,8,Business/Consumer Goods and Services (99.96%)|Regional/Asia (0.01%),
+4,oficinista.net,243.0,small-clean,0.083,27,11,2.45,24,21,19,43,23,2,0,0,1,1,False,2001,143,3,Society/People (99.64%)|Computers/Internet/On the Web (0.31%),es:Manuel Bartual
+5,proinca.net,239.3,ok,0.0,28,6,4.67,29,16,15,36,28,0,0,0,0,1,True,2003,150,9,Regional/Central America (100.00%),
+6,datemachi.net,236.9,ok,0.0,32,12,2.67,21,20,20,27,20,0,0,0,0,0,True,2001,178,1,Arts/Television (100.00%),
+7,librariesvictoria.net,236.3,ok,0.0,31,10,3.1,28,21,21,46,21,0,1,0,0,0,False,2000,216,2,Reference/Libraries (99.98%),
+8,vaporessofrance.net,234.9,deep-link-spam,0.007,27,16,1.69,142,132,125,267,130,1,2,1,0,0,False,2024,17,2,Society/Religion and Spirituality (100.00%),
+9,jamcast.net,234.3,ok,0.0,28,9,3.11,18,15,14,22,17,0,0,0,0,0,True,1999,46,6,Business/Construction and Maintenance (100.00%),
+10,mikewatson.net,233.0,ok,0.0,28,6,4.67,18,16,15,24,16,0,0,0,0,0,True,2000,180,10,Arts/Music (100.00%),

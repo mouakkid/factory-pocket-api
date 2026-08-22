@@ -1,11 +1,11 @@
-rank,domain,score,majestic_trustflow,majestic_citationflow,trust_ratio_tf_cf,referring_domains,referring_ips,referring_subnets,backlinks,refdomains_live,refdomains_homepage,refdomains_edu,refdomains_gov,wikipedia_live_article_citations,majestic_claimed_wiki_links,dmoz_listed,archive_first_year,archive_captures,other_tlds_registered,majestic_topics,wikipedia_articles
-1,carldevogt.org,359.9,29,12,2.42,29,20,19,64,28,0,0,0,5,7,False,2002,127,0,Arts/Performing Arts (99.95%)|Regional/Europe (0.01%),de:Cläre Lotto; en:Carl de Vogt; en:Der Herr der Liebe; es:Der Herr der Liebe; es:Halbblut
-2,afacliban.org,306.3,31,10,3.1,24,23,21,63,24,0,0,0,3,10,True,2011,53,0,Business (99.98%),en:Rail transport in Lebanon; es:Ferrocarril en Líbano; fr:Transport ferroviaire au Liban
-3,penrhiwceiber.org,292.3,26,13,2.0,30,25,21,108,28,1,3,0,2,2,False,2008,50,2,Society/Religion and Spirituality (99.95%),en:Penrhiwceiber; en:Ynysboeth
-4,ejme.org,264.3,27,21,1.29,190,144,134,1502,89,155,0,0,0,0,False,2010,31377,9,Society/Religion and Spirituality (80.05%)|Arts/Writers Resources (18.91%)|Recreation (0.95%),
-5,pketa.org,259.3,29,7,4.14,28,24,23,39,18,0,2,0,0,0,True,2003,265,0,Society/Organizations (99.95%),
-6,ijtindia.org,256.1,32,14,2.29,60,47,43,189,48,1,0,0,0,1,True,2002,1731,1,Business/Textiles and Nonwovens (99.94%)|Reference/Education (0.03%),
-7,azworks.org,254.7,32,16,2.0,53,53,51,1456,52,1,0,0,0,0,False,2001,177,15,Arts/Literature (44.35%)|Games/Video Games/Roleplaying (43.53%)|Games/Roleplaying (12.09%),
-8,coasevt.org,251.2,26,12,2.17,49,29,27,1337,44,11,0,1,0,0,True,2001,219,0,Arts (58.06%)|Society (21.34%)|Society/People (12.26%),
-9,ezzell.org,250.0,26,19,1.37,54,47,45,292,50,18,1,0,0,0,False,1998,143,6,Recreation/Pets (79.94%)|Recreation/Travel (11.90%)|Business/Opportunities (6.28%),
-10,swoba.org,248.9,32,13,2.46,26,24,24,51,25,1,0,0,0,0,True,2006,168,5,Science/Environment (100.00%),
+rank,domain,score,link_shape,homepage_refdomain_share,majestic_trustflow,majestic_citationflow,trust_ratio_tf_cf,referring_domains,referring_ips,referring_subnets,backlinks,refdomains_live,refdomains_homepage,refdomains_edu,refdomains_gov,wikipedia_live_article_citations,majestic_claimed_wiki_links,dmoz_listed,archive_first_year,archive_captures,other_tlds_registered,majestic_topics,wikipedia_articles
+1,carldevogt.org,359.9,ok,0.0,29,12,2.42,29,20,19,64,28,0,0,0,5,7,False,2002,127,0,Arts/Performing Arts (99.95%)|Regional/Europe (0.01%),de:Cläre Lotto; en:Carl de Vogt; en:Der Herr der Liebe; es:Der Herr der Liebe; es:Halbblut
+2,afacliban.org,306.3,ok,0.0,31,10,3.1,24,23,21,63,24,0,0,0,3,10,True,2011,53,0,Business (99.98%),en:Rail transport in Lebanon; es:Ferrocarril en Líbano; fr:Transport ferroviaire au Liban
+3,penrhiwceiber.org,292.3,ok,0.033,26,13,2.0,30,25,21,108,28,1,3,0,2,2,False,2008,50,2,Society/Religion and Spirituality (99.95%),en:Penrhiwceiber; en:Ynysboeth
+4,ejme.org,264.3,ok,0.816,27,21,1.29,190,144,134,1502,89,155,0,0,0,0,False,2010,31377,9,Society/Religion and Spirituality (80.05%)|Arts/Writers Resources (18.91%)|Recreation (0.95%),
+5,pketa.org,259.3,ok,0.0,29,7,4.14,28,24,23,39,18,0,2,0,0,0,True,2003,265,0,Society/Organizations (99.95%),
+6,ijtindia.org,256.1,deep-link-spam,0.017,32,14,2.29,60,47,43,189,48,1,0,0,0,1,True,2002,1731,1,Business/Textiles and Nonwovens (99.94%)|Reference/Education (0.03%),
+7,azworks.org,254.7,deep-link-spam,0.019,32,16,2.0,53,53,51,1456,52,1,0,0,0,0,False,2001,177,15,Arts/Literature (44.35%)|Games/Video Games/Roleplaying (43.53%)|Games/Roleplaying (12.09%),
+8,coasevt.org,251.2,small-clean,0.224,26,12,2.17,49,29,27,1337,44,11,0,1,0,0,True,2001,219,0,Arts (58.06%)|Society (21.34%)|Society/People (12.26%),
+9,ezzell.org,250.0,ok,0.333,26,19,1.37,54,47,45,292,50,18,1,0,0,0,False,1998,143,6,Recreation/Pets (79.94%)|Recreation/Travel (11.90%)|Business/Opportunities (6.28%),
+10,swoba.org,248.9,ok,0.038,32,13,2.46,26,24,24,51,25,1,0,0,0,0,True,2006,168,5,Science/Environment (100.00%),
