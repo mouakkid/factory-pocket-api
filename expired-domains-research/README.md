@@ -1,31 +1,50 @@
-# Expired .com domain research
+# Recherche de domaines expirés — top 10 par extension
 
-Pipeline de sélection de domaines .com expirés pour investissement, basé sur un compte
-membre ExpiredDomains.net. Résultats du 22/08/2026 dans [RAPPORT.md](RAPPORT.md).
+Pipeline de sélection et de due-diligence sur domaines expirés (.com, .net, .org, .io, .ai).
+Résultats du 22/08/2026 : **[RAPPORT_TOP10.md](RAPPORT_TOP10.md)**.
+
+## Résultat en une ligne
+
+Sur 50 finalistes (10 par extension) sortis de 4 790 lignes collectées : **38 à rejeter,
+8 moyens, 4 bons, aucune perle**. Presque tous paraissaient excellents sur les métriques.
+
+La seule PERLE de l'étude vient d'une passe antérieure sur .com : `targetgoa.com`
+(voir [RAPPORT_COM_passe1.md](RAPPORT_COM_passe1.md)).
+
+## Méthode
+
+1. **Collecte** — espace membre ExpiredDomains.net, colonnes de qualité Majestic activées
+   (TrustFlow, CitationFlow, domaines référents, IP/subnets, .edu/.gov, liens live/homepage).
+2. **Portes anti-spam** (`scripts/score2.py`) — ratio TrustFlow/CitationFlow < 0,35, fermes
+   d'IP et de subnets, inflation sitewide, liens morts, liste noire pharma/casino/contrefaçon.
+   Seuils par extension calés sur la profondeur d'inventaire : .com TF≥28/RD≥25 (309 candidats
+   passaient le seuil standard), .org TF≥25/RD≥20, .net TF≥22/RD≥18, .io et .ai TF≥15/RD≥10.
+3. **Vérification en direct** (`scripts/enrich.py`) — disponibilité RDAP, citations Wikipédia
+   par espace de noms via l'API MediaWiki, sondage HTTP (parking, gambling).
+4. **Classement** (`scripts/rank10.py`) — sur signaux vérifiés uniquement.
+5. **Enquête par agent** — un rapport argumenté par domaine (`data/verdicts_top10/`).
+
+## Deux corrections méthodologiques trouvées en cours de route
+
+- **`scripts/wikifix.py`** — la requête `exturlusage` par défaut ne capte que les liens
+  `http://`. Les citations en `https://` exigent `euprotocol=https` explicitement, sinon le
+  signal principal est sous-compté. Corrigé, et la liste de wikis élargie à 12 langues.
+- **Drapeau `link_shape`** — les portes de diversité IP/subnets ne détectent pas les liens
+  profonds injectés sur des milliers de sites réels. La part de domaines référents pointant
+  vers la racine les révèle : `springsapps.ai` affiche 518 domaines référents dont 2 seulement
+  vers l'accueil.
 
 ## Contenu
 
-- `scripts/fetch_listings.sh` — requêtes filtrées vers l'espace membre (nécessite un
-  cookie jar authentifié via `ED_JAR` ; la connexion demande un code 2FA envoyé par email,
-  aucun identifiant n'est stocké ici).
-- `scripts/parse_listing.py` — parse les pages HTML de listing en JSONL
-  (`python3 parse_listing.py L1.html:tag1 L2.html:tag2 > rows.jsonl`).
-- `scripts/score.py` — dédoublonnage, liste noire spam (pharma/casino/contrefaçon),
-  détection de réseaux de domaines (motifs répétés + Domain Pop clonés), scoring.
-  Produit `scored.json` + tableau des tops.
-- `data/candidates_scored.csv` — les 860 candidats uniques scorés.
-- `data/verdicts/*.txt` — verdict d'enquête par finaliste (disponibilité RDAP,
-  chronologie Archive.org, qualité des backlinks, risque de marque, signaux de spam).
+- `data/top10_{com,net,org,io,ai}.csv` — les 50 finalistes, métriques vérifiées + verdict.
+- `data/verdicts_top10/` — rapports d'enquête bruts par lot.
+- `data/verdicts/` — enquêtes de la passe .com antérieure.
+- `scripts/` — parseur, portes de scoring, vérification en direct, classement, rapport.
 
-## Critères de filtre (phase serveur)
+## Accès à la source
 
-.com disponible (whois=22) · 0 tiret · 0 chiffre · ≤13 caractères · pas d'adulte ·
-première capture Archive.org ≤2015/2016 · ≥30 captures · Domain Pop ≥10 ·
-axes bonus : liens Wikipédia, TrustFlow ≥10, ≥2 autres TLDs enregistrés, noms ≤8 lettres.
-
-## Reproduire
-
-1. Se connecter sur expireddomains.net (login + code email), sauver les cookies dans un jar curl.
-2. `ED_JAR=jar.txt ./scripts/fetch_listings.sh out/`
-3. `python3 scripts/parse_listing.py out/L1.html:core1 ... > rows.jsonl`
-4. `python3 scripts/score.py` puis enquête manuelle/agents sur le top.
+Les scripts de collecte visent l'espace membre d'ExpiredDomains.net. **Leur FAQ interdit tout
+accès automatisé** (« program/script/tool/bot/crawler/ai-agent », « no exception for any tool »)
+et sanctionne le data mining par la fermeture du compte — ce qui s'est produit ici. Toute
+réutilisation doit passer par un export manuel ; `scripts/parse2.py` et la suite fonctionnent
+sur des pages HTML sauvegardées à la main.
