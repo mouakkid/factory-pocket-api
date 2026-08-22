@@ -1,0 +1,8 @@
+DOMAIN: urbadriver.com
+AVAILABLE: yes (RDAP 404, NXDOMAIN; page « expired » Dynadot capturée 03/2025 puis drop)
+HISTORY: Site original ~2001-2015 (contenu invérifiable, zéro empreinte moteur), puis 2019-2024 infrastructure black-hat chinoise : 301 vers recherche Baidu « 原子核蜘蛛池 » (spider pool), doorway casino « 3308维多利亚 » usurpant le média d'État CRI Online, contenu chinois scrapé, churn Dynadot.
+BACKLINK_QUALITY: spammy — les 441 liens / 155 RD sont contaminés par l'ère spider-pool/gambling; le « bon ratio » est une illusion de moyenne.
+TRADEMARK_RISK: medium — « Urba Driver » (VTC Californie) et « Urban Driver » (moto-taxi Paris) actifs pile sur la niche mobilité.
+SPAM_SIGNALS: spider pool chinois; doorway casino avec fausse marque CRI; hébergement chinois; trou Wayback 2016-2021.
+VERDICT: REJET — 5 ans en réseau de liens chinois détruisent la valeur; chaque raison d'achat apparente est en réalité un passif.
+VALUE_ANGLE: aucun (il faudrait désavouer tout le profil ET affronter deux marques mobilité actives).
