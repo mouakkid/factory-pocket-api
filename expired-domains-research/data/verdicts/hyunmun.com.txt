@@ -1,0 +1,8 @@
+DOMAIN: hyunmun.com
+AVAILABLE: yes (RDAP 404, DNS mort)
+HISTORY: Site corporate de l'imprimerie coréenne Hyunmun (Goyang), ~40 ans d'activité, archivé 2002→2025 (trou 2005-2010), fin de vie = page défaut CentOS (fermeture du quartier d'imprimeries), pas de pivot spam.
+BACKLINK_QUALITY: mixed/gonflé — 16 175 BL ÷ 95 RD ≈ 170 liens/domaine = footers sitewide de sites partenaires coréens; 0 Wikipédia; pas d'équité transférable.
+TRADEMARK_RISK: medium en Corée (현문북스/현문사 actifs), nul ailleurs mais alors nom sans valeur.
+SPAM_SIGNALS: none (déclin, pas d'abus)
+VERDICT: REJET — BL trompeurs, aucun aftermarket.
+VALUE_ANGLE: aucun.

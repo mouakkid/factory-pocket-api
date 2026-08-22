@@ -1,0 +1,8 @@
+DOMAIN: kirannagarkar.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Site officiel du romancier Kiran Nagarkar (2004→2025, jamais réutilisé), décédé en 2019.
+BACKLINK_QUALITY: clean mais minuscule — 18 RD organiques: Wikipédia (~10 éditions), Wikidata (propriété « site officiel »), Goodreads, HarperCollins.
+TRADEMARK_RISK: medium-high — nom personnel protégeable (précédent UDRP Winterson), ayants droit actifs (estate, HarperCollins India, archives Ashoka University).
+SPAM_SIGNALS: none
+VERDICT: REJET — les liens « site officiel » seront retirés dès que le contenu n'est plus le sien; cybersquatting d'un auteur décédé = indéfendable.
+VALUE_ANGLE: uniquement l'intendance (alerter estate/éditeur), pas la spéculation.

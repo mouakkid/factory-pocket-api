@@ -1,0 +1,8 @@
+DOMAIN: perfscipress.com
+AVAILABLE: yes (RDAP 404 + NXDOMAIN)
+HISTORY: PSIpress « Perfectly Scientific Press » (Portland), maison d'édition math/science fondée ~2009 par Richard Crandall (physicien Reed College, cryptographe en chef d'Apple, †2012); livres des Borwein etc. Archivé 200 de 2009→2025; re-registré 2023 par un flipper (restauration WordPress on-topic) puis re-drop.
+BACKLINK_QUALITY: mixed — cœur académique propre (2 articles Wikipédia EN citent encore le domaine: « List of mathematical constants », « MRB constant »; davidhbailey.com, experimentalmath.info, papiers Springer/Cambridge) MAIS 3551 BL / 31 RD ≈ 115/domaine = inflation sitewide.
+TRADEMARK_RISK: low (société défunte)
+SPAM_SIGNALS: déjà recyclé 1× (2023-2025, resté on-topic); ratio BL:RD gonflé.
+VERDICT: MOYEN — actif de niche solide (confiance topique math/STEM), pas un trésor.
+VALUE_ANGLE: trust instantané pour un projet d'édition/contenu éducatif STEM grâce aux citations Wikipédia vivantes.

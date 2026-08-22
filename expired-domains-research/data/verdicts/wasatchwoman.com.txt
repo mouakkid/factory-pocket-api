@@ -1,0 +1,8 @@
+DOMAIN: wasatchwoman.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Magazine féminin réel de l'Utah (2005-2012, fondé par Amy Beal Cooke & Barbara Vineyard, couvert par KSL.com), puis recyclé ~2016→2023 (7 ans) en blog lifestyle générique type PBN, puis re-expiré.
+BACKLINK_QUALITY: mixed — cœur propre (KSL.com éditorial, NowPlayingUtah, 1 citation Wikipédia VIVANTE sur l'article « Shelley Lubben ») mais seulement 12 RD, et profil déjà exploité par le cycle PBN 2016.
+TRADEMARK_RISK: low (magazine défunt depuis 13 ans, « Wasatch » géographique)
+SPAM_SIGNALS: 1 cycle de recyclage PBN (~2016) sans casino/pharma.
+VERDICT: MOYEN — pedigree média local authentique + citation Wikipédia vivante, mais équité minuscule déjà « brûlée » une fois.
+VALUE_ANGLE: pickup pas cher si rebuild communauté féminine Utah + restauration de l'URL citée par Wikipédia; sans valeur comme pur véhicule de liens.

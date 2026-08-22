@@ -1,0 +1,8 @@
+DOMAIN: zonetroopers.com
+AVAILABLE: NO — re-registré le 21/08/2026 (la veille !) via NameCheap/Cloudflare par une opération de gambling indonésien (page « togel » 5KTOTO déjà en ligne). Listing ExpiredDomains périmé.
+HISTORY: Blog Weebly de critiques de films de série B années 80 (2011-2018), nommé d'après le film de 1985.
+BACKLINK_QUALITY: mixed/nul — les « 12 liens Wikipédia » = 8 pages Talk: (notices bot InternetArchiveBot) + 1 page File:, zéro article, tout nofollow; 13 RD niveau blog amateur.
+TRADEMARK_RISK: low
+SPAM_SIGNALS: rachat immédiat par réseau gambling ID; métrique wiki = mirage.
+VERDICT: REJET — parti (racheté hier), et ses métriques étaient un leurre.
+VALUE_ANGLE: aucun.

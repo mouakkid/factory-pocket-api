@@ -1,0 +1,8 @@
+DOMAIN: janaojana.com
+AVAILABLE: yes (RDAP 404, drop récent — dernière capture 02/2025)
+HISTORY: Site bangladais lancé 2010 (Q&A communautaire), devenu blog infotainment bengali « জানা অজানা », archivé en continu 2010→02/2025 (15 ans, cohérent, sans piratage).
+BACKLINK_QUALITY: mixed/gonflé — 89 811 BL ÷ 60 RD ≈ 1500 liens/domaine = footers sitewide d'un petit écosystème de blogs bengalis (en partie morts); 1 seul lien Wikipédia (bn, faible); empreinte tierce quasi nulle.
+TRADEMARK_RISK: low (phrase générique bengalie)
+SPAM_SIGNALS: ratio extrême BL/RD; press release auto-promo; métriques Majestic périmées. Pas de casino/pharma.
+VERDICT: MOYEN — 15 ans d'historique propre et nom générique brandable, mais AUCUNE équité SEO réelle à acheter.
+VALUE_ANGLE: pickup au prix d'enregistrement uniquement comme marque .com âgée pour un projet infotainment bengali (250M+ locuteurs) — pas comme play de backlinks.

@@ -1,0 +1,8 @@
+DOMAIN: cegkereso.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Petit annuaire hongrois « cégkereső » 2004→~2021, puis drop-catch et réutilisation 2025 en site de paris/combats de coqs vietnamien « Đá Gà 88 » (adresse HCMC, satellites promo), puis parking ww38 et re-drop.
+BACKLINK_QUALITY: spammy — 56 511 BL / 13 domaines référents (~4300 liens/domaine) = footer sitewide pur, en grande partie réseau gambling.
+TRADEMARK_RISK: low (terme générique hongrois)
+SPAM_SIGNALS: réutilisation gambling vietnamienne confirmée; satellites cegkeresocom.website3.me; pattern link-farm; parking monétisé.
+VERDICT: REJET — domaine « grillé » (gambling), backlinks toxiques, marché hongrois 100% en .hu (cegkereso.hu lui-même parqué invendu).
+VALUE_ANGLE: aucun — préférer cegkereso.hu si on visait ce mot-clé.

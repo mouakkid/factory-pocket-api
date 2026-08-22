@@ -1,0 +1,8 @@
+DOMAIN: batoll.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Site officiel du groupe post-rock londonien Bikini Atoll (label Bella Union, 1999-2006, avec Joe Gideon et Viva Seifert de « Her Story »), une seule thématique de 2002→2025 (24 ans !), drop tout récent, jamais réutilisé.
+BACKLINK_QUALITY: clean — citations Wikipédia vivantes (en: « Bikini Atoll (band) » ×3, « Viva Seifert »; it.wiki aussi), écosystème musical (MusicBrainz/RYM); 398 BL/42 RD cohérent, zéro trace PBN/marketplace.
+TRADEMARK_RISK: low (groupe dissous 2006, pas de marque)
+SPAM_SIGNALS: none
+VERDICT: MOYEN(+) — .com de 6 lettres prononçable, 24 ans d'âge, profil 100% propre; plafond SEO limité (42 RD, wiki nofollow).
+VALUE_ANGLE: très bon pickup au prix d'enregistrement comme brandable 6 lettres âgé (ou rebuild musical/archives qui conserve les citations Wikipédia).

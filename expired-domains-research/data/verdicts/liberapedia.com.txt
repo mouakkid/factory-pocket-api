@@ -1,0 +1,8 @@
+DOMAIN: liberapedia.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Domaine d'origine (2007-2008) du wiki parodique Liberapedia; la communauté a migré vers Wikia (2008) puis Miraheze (2023, toujours actif). Re-registration mystère 2011→2023 (contenu sporadique/parking), re-drop.
+BACKLINK_QUALITY: mixed/quasi nul — tous les liens Wikipédia vérifiés (API enwiki) = Talk:/User: nofollow 2007-08; le reste = écosystème wiki (RationalWiki, Uncyclopedia…) pointant vers un projet parti il y a 17 ans.
+TRADEMARK_RISK: low (pas d'élément « wiki »; mais communauté vivante = confusion possible)
+SPAM_SIGNALS: aucun confirmé; 2 lapses + 12 ans de contenu invérifiable.
+VERDICT: REJET — les métriques s'évaporent à l'inspection.
+VALUE_ANGLE: don/flip nostalgie à la communauté Miraheze, rien de plus.

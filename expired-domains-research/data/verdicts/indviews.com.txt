@@ -1,0 +1,8 @@
+DOMAIN: indviews.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Petit blog indien (sous-domaine dharma.indviews.com sur l'hindouisme), captures éparses 2007→2020, drop ~2021, re-registré 2022 = parking GoDaddy, re-drop.
+BACKLINK_QUALITY: mixed/mirage — 460 BL / 15 RD (~31:1 sitewide); les « 14 liens Wikipédia » = uniquement pages Talk:/User: nofollow (Talk:Hinduism/Archive 18, sandboxes) — zéro citation d'article sur en/hi/bn/mr/de/es.
+TRADEMARK_RISK: low
+SPAM_SIGNALS: parking publicitaire GoDaddy 2022-2025; concentration extrême de liens; drops de liens auto-promo 2007 jamais retenus en articles.
+VERDICT: REJET — métriques mirage, déjà passé par un cycle drop-catch-park sans trouver preneur.
+VALUE_ANGLE: au mieux prix d'enregistrement comme nom générique pour projet de commentaire indien.

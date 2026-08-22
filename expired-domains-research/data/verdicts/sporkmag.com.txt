@@ -1,0 +1,8 @@
+DOMAIN: sporkmag.com
+AVAILABLE: yes (RDAP 404, NXDOMAIN)
+HISTORY: Domaine d'origine (2002-2016) de Spork, revue littéraire artisanale de Spork Press (Tucson), cofondée par le poète Richard Siken. La maison a migré vers thisissporkpress.com (toujours active). Blip de re-registration 2023-2024 (parking probable) puis re-drop.
+BACKLINK_QUALITY: clean mais petit/vieillissant — écosystème littéraire réel (poets.org, Poets&Writers, Poetry Foundation, UA Poetry Center); le lien Wikipédia est une page de discussion de suppression (faible poids); annuaires majeurs ont déjà mis à jour vers le nouveau domaine.
+TRADEMARK_RISK: medium — Spork Press vivante et active dans la même niche exacte.
+SPAM_SIGNALS: blip parking 2023-2024, sinon rien.
+VERDICT: MOYEN — provenance propre, mais équité minuscule et marque vivante à côté.
+VALUE_ANGLE: revente à Spork Press ou projet poésie/petite édition; l'ancienneté 2002 vaut plus que les métriques brutes.

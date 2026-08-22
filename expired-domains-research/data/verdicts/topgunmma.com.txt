@@ -1,0 +1,8 @@
+DOMAIN: topgunmma.com
+AVAILABLE: yes (RDAP 404, drop récent)
+HISTORY: 2008-2010 = vraie base de données/classements MMA (citée par Bleacher Report « ranked No.7 by Top Gun MMA », référencée par des pages Wikipédia de combattants). Mort ~2011-2020, ré-enregistré 2021→07/2025 comme landing page générique de salle de sport (sans salle réelle derrière), re-drop.
+BACKLINK_QUALITY: clean mais âgé — citations éditoriales 2008-2010 (Wikipédia « Paul Jones (MMA) » avec liens taggés « dead link », Bleacher Report ×2, wikis MMA); 27 RD; zéro trace casino/pharma/Clickbank.
+TRADEMARK_RISK: low — « Top Gun » descriptif courant pour salles de combat; risque seulement si imitation du film.
+SPAM_SIGNALS: 1 cycle de réanimation domainer (2021-2025, template gym générique).
+VERDICT: MOYEN — profil éditorial propre mais petit (27 RD), liens vieux de 15 ans marqués morts; vaut le prix d'enregistrement, pas une prime d'enchère.
+VALUE_ANGLE: base de marque exacte crédible pour contenu/classements MMA ou salle; recréer les URLs /viewFighter.php pour recapturer les deep links Wikipédia/Bleacher Report avant élagage.

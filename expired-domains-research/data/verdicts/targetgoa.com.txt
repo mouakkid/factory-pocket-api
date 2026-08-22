@@ -1,0 +1,8 @@
+DOMAIN: targetgoa.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Portail d'actualités/culture de Goa (Inde), actif 2008→mi-2025 (~17 ans, snapshots 200 continus), lié au cercle des journalistes goannais (Goa Buzz, chroniques de Prajal Sakhardande). Drop récent post-juin 2025.
+BACKLINK_QUALITY: clean — 8 articles Wikipédia EN citent encore ses pages (vérifié via API exturlusage: B.V. Wanchoo, Dayanand Bandodkar, Anil Kakodkar, etc.); reste du profil = forums goannais (Goanet), groupes de journalistes, annuaires. Zéro trace casino/pharma/essay/loan.
+TRADEMARK_RISK: low — usage descriptif journalistique; éviter un rebuild e-commerce façon Target Corp.
+SPAM_SIGNALS: none
+VERDICT: PERLE — 17 ans d'authenticité, citations Wikipédia vivantes, dispo au prix d'enregistrement.
+VALUE_ANGLE: Rebuild guide voyage/actu Goa + 301 des URLs citées par Wikipédia pour réactiver l'équité de liens; niche tourisme Goa rentable.

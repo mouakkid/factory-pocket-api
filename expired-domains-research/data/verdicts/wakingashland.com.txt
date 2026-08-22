@@ -1,0 +1,8 @@
+DOMAIN: wakingashland.com
+AVAILABLE: yes (RDAP 404, NXDOMAIN)
+HISTORY: Site officiel du groupe piano-rock Waking Ashland (San Diego, Tooth & Nail Records, 2003-2007, réunion 2010; frontman Jonathan Jones toujours actif). Captures 200 continues 2004→2025. Wikidata pointe encore ici comme « site officiel » (P856).
+BACKLINK_QUALITY: clean — 15 RD organiques (label Tooth & Nail, punknews.org, punktastic, San Diego Reader, Songkick, AllMusic). Bémol : les 3 liens Wikipédia sont historiques (plus vivants).
+TRADEMARK_RISK: medium — identité d'un groupe réel dont les membres sont vivants et actifs.
+SPAM_SIGNALS: none
+VERDICT: MOYEN — propre mais équité minuscule et soudée à l'identité du groupe.
+VALUE_ANGLE: archive fan/nostalgie ou revente au groupe (20 ans de « Composure » en 2025, Wikidata pointe encore ici) — pas de levier SEO générique.

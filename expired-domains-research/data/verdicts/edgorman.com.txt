@@ -1,0 +1,8 @@
+DOMAIN: edgorman.com
+AVAILABLE: yes (RDAP 404 + NXDOMAIN)
+HISTORY: Site perso à faible trafic (captures éparses 2001-2021, longs trous), a probablement changé de mains. Hypothèse « site officiel de l'auteur Ed Gorman » RÉFUTÉE : son vrai site était newimprovedgorman.com/blogspot (cité par Amazon et les annuaires polar). Plusieurs Ed Gorman vivants sans lien (dev GitHub, journaliste du Times, marathonien).
+BACKLINK_QUALITY: unknown/nul — 29 RD négligeables, zéro page vivante citant le domaine; pas de spam non plus.
+TRADEMARK_RISK: low (nom commun), medium si exploitation de l'identité de l'auteur décédé.
+SPAM_SIGNALS: none
+VERDICT: REJET — la prémisse de valeur était fausse; 709 BL sur 29 petits RD = rien à acheter.
+VALUE_ANGLE: anecdote: le VRAI ancien domaine de l'auteur, newimprovedgorman.com, est aussi libre (NXDOMAIN) — pickup plus authentique pour un projet fan/estate.

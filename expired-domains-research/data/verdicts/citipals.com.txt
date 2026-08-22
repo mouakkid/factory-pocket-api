@@ -1,0 +1,8 @@
+DOMAIN: citipals.com
+AVAILABLE: yes (RDAP 404)
+HISTORY: Startup indienne Web 2.0 (2007-2013, avis locaux Mumbai/Pune + app MovieMatch), puis réutilisé 2019-2025 comme hôte de parking PPC avec sous-domaines wildcard (doorway pages).
+BACKLINK_QUALITY: mixed→mort — 12 domaines référents triviaux; les 2 liens Wikipédia n'existent plus (vérifié insource=0); métrique Majestic gonflée par liens historiques supprimés.
+TRADEMARK_RISK: medium — famille de marques CITI (Citigroup) très procédurière; orthographe exacte « Citi ».
+SPAM_SIGNALS: parking PPC wildcard (doorway assurance), historique pollué 2019-2025.
+VERDICT: REJET — aucune équité vivante + exposition marque.
+VALUE_ANGLE: préférer une variante « CityPals » enregistrée fraîche.
