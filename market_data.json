@@ -1,6 +1,6 @@
 {
-  "last_update": "2026-08-23T09:37:12.357089+00:00",
-  "totalItems": 30,
+  "last_update": "2026-08-23T10:35:02.173100+00:00",
+  "totalItems": 31,
   "indices": [
     {
       "ticker": "^GSPC",
@@ -123,6 +123,14 @@
       "name": "Brent Crude",
       "price": 94.39,
       "trend": 0.65,
+      "currency": "USD",
+      "unit": "USD/bbl"
+    },
+    {
+      "ticker": "CL=F",
+      "name": "WTI Crude",
+      "price": 87.06,
+      "trend": -0.88,
       "currency": "USD",
       "unit": "USD/bbl"
     },
