@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-23T16:37:32.225054+00:00",
+  "last_update": "2026-08-23T17:30:16.353729+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -213,16 +213,16 @@
     {
       "ticker": "SB=F",
       "name": "Sugar #11",
-      "price": 17.6,
-      "trend": 0.46,
+      "price": 17.61,
+      "trend": 0.51,
       "currency": null,
       "unit": "¢/lb"
     },
     {
       "ticker": "KC=F",
       "name": "Coffee",
-      "price": 324.9,
-      "trend": -10.64,
+      "price": 322.65,
+      "trend": -11.26,
       "currency": null,
       "unit": "¢/lb"
     },
@@ -278,12 +278,12 @@
     "MXN": 16.893,
     "TWD": 31.823,
     "ZAR": 16.02,
-    "BRL": 5.1366,
+    "BRL": 5.1364,
     "DKK": 6.398,
-    "PLN": 3.6883,
+    "PLN": 3.6887,
     "THB": 32.66,
     "IDR": 17700.0,
-    "HUF": 310.28,
+    "HUF": 310.27,
     "CZK": 20.625,
     "ILS": 2.9863,
     "CLP": 914.28,
