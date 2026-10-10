@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-10T15:16:27.997457+00:00",
+  "last_update": "2026-10-10T20:00:29.364648+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -221,16 +221,16 @@
     {
       "ticker": "KC=F",
       "name": "Coffee",
-      "price": 286.95,
-      "trend": -0.73,
+      "price": 289.05,
+      "trend": -1.25,
       "currency": null,
       "unit": "¢/lb"
     },
     {
       "ticker": "CT=F",
       "name": "Cotton #2",
-      "price": 80.54,
-      "trend": 5.68,
+      "price": 76.21,
+      "trend": -0.12,
       "currency": null,
       "unit": "¢/lb"
     },
