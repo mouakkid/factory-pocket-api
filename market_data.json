@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-17T22:12:49.897000+00:00",
+  "last_update": "2026-10-18T00:54:22.291421+00:00",
   "totalItems": 31,
   "indices": [
     {
@@ -71,8 +71,8 @@
     {
       "ticker": "GBPUSD=X",
       "name": "GBP / USD",
-      "price": 1.333,
-      "trend": 0.43,
+      "price": 1.3329,
+      "trend": 0.42,
       "currency": null,
       "unit": null
     },
